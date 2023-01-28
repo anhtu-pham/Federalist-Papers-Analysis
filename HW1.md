@@ -133,7 +133,7 @@ Explanation:
     \begin{array}{ccc|c}
         1&1&2&1\\
         1&2&-1&-2\\
-        1&3&1&5\\
+        1&3&1&5
     \end{array}
 \right]
 ```
@@ -144,7 +144,7 @@ Explanation:
     \begin{array}{ccc|c}
         1&1&2&1\\
         0&1&-3&-3\\
-        0&0&5&10\\
+        0&0&5&10
     \end{array}
 \right]
 ```
@@ -160,7 +160,7 @@ Explanation:
 9. Compute the matrix products $AB$ where: (i) $A=[1, 2, 3; 4, 5, 6; 7, 8, 9]$ and $B=[1, 1, 0; 0, 1, 1; 1, 0, 1]$ (ii) $A=[1, 2, 1, 2; 4, 1, -1, -4]$ and $B=[0, 3; 1, -1; 2, 1; 5, 2]$ (iii) $A=[0, 3; 1, -1; 2, 1; 5, 2]$ and $B=[1, 2, 1, 2; 4, 1, -1, -4]$.
 
 Answer:
-
+```math
 (i)\
 $AB=\left[
     \begin{array}{ccc}
@@ -245,3 +245,4 @@ $AB= \left[
     \end{array}
 \right]
 $
+```
