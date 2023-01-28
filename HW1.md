@@ -83,14 +83,10 @@ $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$
 				      ```
 				      
 Finally, we prove the third property by contradiction:
-<<<<<<< HEAD
 
 $\quad$ Suppose that $ d(u,y) + d(y,v) < d(u,v)$.
 While $u$ to $y$ and  $y$ to $v$ is a connected path from $u$ to $v$, it is not possible for $d(u,y) + d(y,v)$ to be a shorter path than $d(u,v)$ as by definition the Euclidean space represents the shortest distance between two points. Hence $d(u,v )$ is the smallest distance of any paths from $u$ to $v$ and therefore $d(u,y) + d(y,v) < d(u,v)$ is a false statement. 
 $$ \Longrightarrow d(u,y) + d(y,v) \geq d(u,v)$$
-=======
-$(u,y) + d(y,v) < d(u,v)$
->>>>>>> 74e7fea3d6ef849808c678412e4a093a5631620f
 
 6. Consider the vectors $[1, 2, 3]$ and $[-1, -1, 0]$. Compute the Manhattan norms of each vector and the Manhattan distance between them.
 
