@@ -70,7 +70,7 @@ $\quad$ For $u=v\Longrightarrow u-v=0:$
 $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$				
 				     $$ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}$$ $$ =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )$$
 Finally, we prove the third property by contradiction:
-$\quad$ Suppose that$\quad d(u,y) + d(y,v) < d(u,v)$
+$(u,y) + d(y,v) < d(u,v)$
 
 6. Consider the vectors $[1, 2, 3]$ and $[-1, -1, 0]$. Compute the Manhattan norms of each vector and the Manhattan distance between them.
 
