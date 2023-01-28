@@ -109,7 +109,8 @@ $$||a-b||_1=|1-(-1)| + |2-(-1)| + |3-0|= 8$$
 7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$? 
 
 Answer: We can perform operations on the $3\times3$ matrix 
-```math\left[
+```math
+\left[
     \begin{array}{ccc}
         2&1&3\\
         -1&1&-3\\
@@ -118,7 +119,8 @@ Answer: We can perform operations on the $3\times3$ matrix
 \right]
 ```
 and turn the matrix into its reduced row form: 
-```math\left[
+```math
+\left[
     \begin{array}{ccc}
         1&0&2\\
         0&1&-1\\
