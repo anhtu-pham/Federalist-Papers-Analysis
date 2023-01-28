@@ -54,7 +54,7 @@ Sources:
 Answer:
 
 Let a and b be 2 arbitrary vectors of size 2.\
-$a=[a_1, a_2], \ b=[b_1,b_2]$\
+$a=(a_1, a_2), \ b=(b_1,b_2)$\
 The Euclidean norm of vector a is that $||a||_2=\sqrt{a_1^2+a_2^2}$\
 The Euclidean norm of vector b is that $||b||_2=\sqrt{b_1^2+b_2^2}$\
 Prove that they satisfy the three properties of a norm:
