@@ -154,7 +154,7 @@ Explanation:
 \begin{cases} 1a + 1b + 1c = 1 \\ 0a + 1b -3c = -3 \\ 0a + 0b + 5c =10 \end{cases}
 ```
 
-* The simple steps remain. I back-substitute and find out $ a=-6; b=3; c=2. $
+* The simple steps remain. I back-substitute and find out $a=-6; b=3; c=2.$
 
 
 9. Compute the matrix products $AB$ where: (i) $A=[1, 2, 3; 4, 5, 6; 7, 8, 9]$ and $B=[1, 1, 0; 0, 1, 1; 1, 0, 1]$ (ii) $A=[1, 2, 1, 2; 4, 1, -1, -4]$ and $B=[0, 3; 1, -1; 2, 1; 5, 2]$ (iii) $A=[0, 3; 1, -1; 2, 1; 5, 2]$ and $B=[1, 2, 1, 2; 4, 1, -1, -4]$.
@@ -162,7 +162,7 @@ Explanation:
 Answer:
 ```math
 (i)\
-$AB=\left[
+AB=\left[
     \begin{array}{ccc}
         1&2&3\\
         4&5&6\\
@@ -188,7 +188,7 @@ $AB=\left[
         16&15&17\\
     \end{array}
 \right]
-$\
+\
 (ii)\
 $AB=\left[
     \begin{array}{cccc}
@@ -214,9 +214,9 @@ $AB=\left[
         -21&2\\
     \end{array}
 \right]
-$\
+\
 (iii)\
-$AB= \left[
+AB= \left[
     \begin{array}{cc}
         0&3\\
         1&-1\\
@@ -244,5 +244,4 @@ $AB= \left[
         13&12&3&2
     \end{array}
 \right]
-$
 ```
