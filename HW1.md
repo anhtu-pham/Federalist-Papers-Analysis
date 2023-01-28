@@ -70,7 +70,7 @@ $||ca||_2=\sqrt{(ca_1)^2+(ca_2)^2}=\sqrt{c^2(a_1^2+a_2^2)}=\sqrt{c^2}.\sqrt{a_1^
 $(||a+b||_2)^2=(||(a_1+b_1, a_2+b_2)||_2)^2=(\sqrt{(a_1+b_1)^2+(a_2+b_2)^2})^2=(a_1+b_1)^2+(a_2+b_2)^2=a_1^2+b_1^2+a_2^2+b_2^2+2a_1b_1+2a_2b_2=a_1^2+a_2^2+b_1^2+b_2^2+2(a_1b_1+a_2b_2)$\
 $(||a||_2+||b||_2)^2=||a||_2^2+||b||_2^2+2||a||_2.||b||_2=a_1^2+a_2^2+b_1^2+b_2^2+2\sqrt{{(a_1^2+a_2^2)(b_1^2+b_2^2)}}$\
 $2\sqrt{{(a_1^2+a_2^2)(b_1^2+b_2^2)}}=2\sqrt{a_1^2b_1^2+a_1^2b_2^2+a_2^2b_1^2+a_2^2b_2^2}\geq 2\sqrt{a_1^2b_1^2+a_2^2b_2^2+2a_1b_2a_2b_1}=2|a_1b_1+a_2b_2|\geq 2(a_1b_1+a_2b_2)$\
-Therefore, $(||a+b||_2)^2 \leq (||a||_2+||b||_2)^2$, which means that $||a+b||_2 \leq ||a||_2+||b||_2$ because $||a+b||_2, ||a||,$ and $||b||$ are non-negative.
+Therefore, $(||a+b||_2)^2 \leq (||a||_2+||b||_2)^2$, which means that $||a+b||_2 \leq ||a||_2+||b||_2$ because $||a+b||_2, ||a||_2,$ and $||b||_2$ are non-negative.
 
 5.  Consider vectors of size 2. Show that the Euclidean distance between such vectors satisfy the three properties of a metric.
 
@@ -92,11 +92,9 @@ $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$
 				      
 Finally, we prove the third property by contradiction:
 
-$\quad$ Suppose that $d(u,y) + d(y,v) < d(u,v)$.
+$\quad$ Suppose that $ d(u,y) + d(y,v) < d(u,v)$.
 While $u$ to $y$ and  $y$ to $v$ is a connected path from $u$ to $v$, it is not possible for $d(u,y) + d(y,v)$ to be a shorter path than $d(u,v)$ as by definition the Euclidean space represents the shortest distance between two points. Hence $d(u,v )$ is the smallest distance of any paths from $u$ to $v$ and therefore $d(u,y) + d(y,v) < d(u,v)$ is a false statement. 
-```math
- \Longrightarrow d(u,y) + d(y,v) \geq d(u,v)
- ```
+$$ \Longrightarrow d(u,y) + d(y,v) \geq d(u,v)$$
 
 6. Consider the vectors $[1, 2, 3]$ and $[-1, -1, 0]$. Compute the Manhattan norms of each vector and the Manhattan distance between them.
 
