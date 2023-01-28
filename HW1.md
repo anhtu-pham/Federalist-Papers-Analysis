@@ -28,6 +28,18 @@ References:
 3. Research one data science application (it could be one we have discussed in class) and write a short essay (~300 words) describing the application, the approach and results. Try to give details about the operational stack (how the data was stored, the file system, how it was queried and so on) if you can find the information. Cite all sources appropriately.
 
 Answer:
+Data science is becoming increasingly important in healthcare, from improving the efficiency of care to helping diagnose and treat disease. One example of data science being used in healthcare is the use of natural language processing (NLP) to automatically extract information from medical records. NLP uses a variety of techniques to process and understand medical concepts in text, such as diseases, symptoms, treatments, and medications. It can also be used to identify relationships between medical concepts, such as which treatments are most effective for a particular disease.
+
+In healthcare applications, NLP is typically used in combination with other data sources such as patient histories, laboratory test results, and imaging scans. The data is stored in a variety of formats, such as structured databases, unstructured text files, and multimedia files. To query this data, various methods such as SQL and NoSQL are used.
+
+NLP has been used in a variety of healthcare applications. For example, it has been used to automatically identify symptoms in patient records, risk factors for certain diseases, and drug to drug iteractions. Hence NLP is applied to generate alerts when certain conditions are met, such as when a patient is prescribed an inappropriate medication.
+
+Overall, NLP is a powerful tool for extracting information from medical records and other sources of healthcare data. With the increasing availability of healthcare data, NLP can be used to identify important insights and improve the quality of care. Healthcare professionals may develop a thorough image of each patient, comprehend the aspects that contribute to better patient care, and cut costs by utilizing the power of data science.
+Sources:
+-   "Natural Language Processing (NLP)". https://en.wikipedia.org/wiki/Natural_language_processing. 
+-   "Natural Language Processing in Healthcare". https://www.healthcatalyst.com/insights/how-healthcare-nlp-taps-unstructured-datas-potential
+-   "Data types (Transact-SQL)". https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
+4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
 4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
@@ -35,7 +47,15 @@ Answer:
 
 5.  Consider vectors of size 2. Show that the Euclidean distance between such vectors satisfy the three properties of a metric.
 
-Answer:
+Answer:  For vectors u and v of size 2, we have the Euclidean distance: $d(u,v) =‖u-v‖_2 = \sqrt[2]{(u-v)\cdot(u-v)}$. 
+We can proof the $1^{st}$ metric property directly  : $$ \sqrt[2]{(u-v)\cdot(u-v)}  =\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}=\sqrt[2]{(v_1-u_1)^2+(v_2-u_2)^2}$$ $$= \sqrt[2]{(v-u)\cdot(v-u)}=‖v-u‖_2=d(v, u) = d(u,v)$$
+Similarly for the $2^{nd}$ property: 
+$\quad$ For $u=v\Longrightarrow u-v=0:$
+					 $$ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{0\cdot0}=0$$
+$\quad$ For $u\neq v\Longrightarrow u-v\neq0:$				
+				     $$ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}$$ $$ =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )$$
+Finally, we prove the third property by contradiction:
+$\quad$ Suppose that$\quad d(u,y) + d(y,v) < d(u,v)$
 
 6. Consider the vectors $[1, 2, 3]$ and $[-1, -1, 0]$. Compute the Manhattan norms of each vector and the Manhattan distance between them.
 
@@ -53,7 +73,10 @@ $$
 
 7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$?
 
-Answer:
+Answer: We can calculate the determinant of a $3\times3$ matrix $$|2, 1, 3|$$ $$|-1, 1, -3|$$ $$|3,-2,8|$$ formed by the three vector to determinate whether the vectors are linearly dependent or not:
+$\quad$ By using cofactor expansion the answer is given by:
+					$$ 2\times (-1)^{1+1}\times [(1 \times 8)- (-3\times-2)] + $$ $$ 1\times (-1)^{1+2}\times [(-1 \times 8)- (-3\times3)] + 3\times (-1)^{1+3}\times [(-1 \times -2)- (3\times1)] $$ $$ = 4-1-3=0$$
+Since the matrix determinant is zero, the vectors are linearly dependent
 
 8. Write $[1, -2, 5]$ as a linear combination of $[1, 1, 1]$, $[1, 2, 3]$ and $[2, -1, 1]$.
 
