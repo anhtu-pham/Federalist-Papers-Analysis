@@ -111,29 +111,29 @@ $$||a-b||_1=|1-(-1)| + |2-(-1)| + |3-0|= 8$$
 7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$? 
 
 Answer: We can perform operations on the $3\times3$ matrix 
-$$\left[
+```math\left[
     \begin{array}{ccc}
         2&1&3\\
         -1&1&-3\\
         3&-2&8\\
     \end{array}
 \right]
-$$ 
+```
 and turn the matrix into its reduced row form: 
-$$\left[
+```math\left[
     \begin{array}{ccc}
         1&0&2\\
         0&1&-1\\
         0&0&0\\
     \end{array}
 \right]
-$$ 
+```
 $\quad$ The equations representation of this matrix shows us this is an equation with infinite solutions since there are three unknowns and only two equations:
-$$
+```math
 \begin{cases} 1a  + 2c = 0 \\  b -c =0  \end{cases}
-$$
+```
 $\quad$ We have $a = -2; b = c = 1$ as a solution for the system and therefore there exists a linear combination of 
-$$
+```math
 \begin{gather}
 -2
  [2, -1, 3]
@@ -146,7 +146,7 @@ $$
  =
  0
 \end{gather}
-$$
+```
 $\qquad\qquad\qquad\qquad\qquad\qquad\Longrightarrow$ The vectors are linearly dependant
 
 8. Write $[1, -2, 5]$ as a linear combination of $[1, 1, 1]$, $[1, 2, 3]$ and $[2, -1, 1]$.
