@@ -77,7 +77,7 @@ Answer:
 * Set $a=[1, 2, 3]$, $b=[-1, -1, 0]$.
 * Calculate the 1-norm for the vectors.
 $$
-a = |1+2+3| = 6 ; b = |-1-1+0| = 2
+||a||_1 = |1+2+3| = 6 ; ||b||_1 = |-1-1+0| = 2
 $$
 
 * Calculate the 1-norm distance for 2 vectors.
