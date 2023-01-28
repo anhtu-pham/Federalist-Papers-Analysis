@@ -7,11 +7,6 @@ Answer:
 
 Data science benefits people’s lives in a variety of ways. For companies and businesses, data science can be utilized to identify noteworthy data and pattern, develop predictive fraud propensity models using statistical, network, path, and big data approaches, and use these models to generate alerts, which help making prompt reactions when unusual data is detected. Moreover, by evaluating data obtained in the database, businesses can identify the best-selling products, determine when and where they can sell the most products. With this valuable information, businesses are able to offer the correct products at appropriate time and develop new products to fulfill the customers’ needs. With regard to environment protection, data science can help prevent the climate change’s damage, which negatively affects people’s lives. A reporting platform called Climate Data Partnership was designed with the collaboration of The California Air Resources Board, Plant Labs and the Environmental Defense Fund to support more focused climate control actions. With data collected from distinct, overlapping data projects, including two satellite deployments to track climate change on the Earth from outer space, and data from organizations monitoring deforestation and other information on the ground, we may have a clearer view of the Earth’s current condition, find answers to the big questions about the climate change, and increase transparency regarding how global supply networks affect the Earth. Data science is also a crucial tool to help people meet essential needs. Each year, Benefits Data Trust, a grantee of The Rockefeller Foundation organization, utilizes the data, policy change, targeted outreach, and new technologies to help people receive essential assistance. Benefits Data Trust successfully submitted more than 800,000 applications and secured more than 7 billion dollars in benefits and services that aided people and families in achieving financial stability and opened a better path for them in the future.
 
-Sources:
-* "Introducing Data Science for Social Impact" by Dr. Rajiv J. Shah. https://www.rockefellerfoundation.org/blog/introducing-data-science-social-impact/
-* "Why Data Science Matters and How It Powers Business in 2023" by Avantika Monnappa. https://www.simplilearn.com/why-and-how-data-science-matters-to-business-article
-* "Data Science is Changing the World for the Better: Here's How" by Prasad Kothari. https://insidebigdata.com/2020/04/14/data-science-is-changing-the-world-for-the-better-heres-how/
-
 2. Write a short essay (~300 words) about the negative impacts of data science on our lives. This could include some of the issues discussed in class, or other impacts you have read about elsewhere. Cite all sources appropriately.
 
 Answer:
@@ -89,14 +84,10 @@ $(u,y) + d(y,v) < d(u,v)$
 Answer:
 * Set $a=[1, 2, 3]$, $b=[-1, -1, 0]$.
 * Calculate the 1-norm for the vectors.
-$$
-||a||_1 = |1+2+3| = 6 ; ||b||_1 = |-1-1+0| = 2
-$$
+$$||a||_1 = |1+2+3| = 6 ; ||b||_1 = |-1-1+0| = 2$$
 
 * Calculate the 1-norm distance for 2 vectors.
-$$
-||a-b||_1=|1-(-1)| + |2-(-1)| + |3-0|= 8
-$$
+$$||a-b||_1=|1-(-1)| + |2-(-1)| + |3-0|= 8$$
 
 7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$?
 
@@ -109,7 +100,7 @@ Since the matrix determinant is zero, the vectors are linearly dependent
 
 Answer:
 
-$$
+```math
 \begin{gather}
 [1, -2, 5]
 =
@@ -122,34 +113,37 @@ $$
 2
  [3, -3, 8]
 \end{gather}
-$$
+```
 
 Explanation:
 
 * First I compute the matrices that we need to find combination into a big matrix.
 
-
-$$\left[
+```math
+\left[
     \begin{array}{ccc|c}
         1&1&2&1\\
         1&2&-1&-2\\
         1&3&1&5\\
     \end{array}
-\right]$$
+\right]
+```
 
 * Then I use row reductions to make an upper triangular form.
-$$\left[
+```math
+\left[
     \begin{array}{ccc|c}
         1&1&2&1\\
         0&1&-3&-3\\
         0&0&5&10\\
     \end{array}
-\right]$$
+\right]
+```
 
 * If we transfer this matrix into equations, it looks like:
-$$
+```math
 \begin{cases} 1a + 1b + 1c = 1 \\ 0a + 1b -3c = -3 \\ 0a + 0b + 5c =10 \end{cases}
-$$
+```
 
 * The simple steps remain. I back-substitute and find out $ a=-6; b=3; c=2. $
 
