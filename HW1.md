@@ -45,6 +45,20 @@ Sources:
 
 Answer:
 
+Let a and b be 2 arbitrary vectors of size 2.\
+$a=[a_1, a_2], \ b=[b_1,b_2]$\
+The Euclidean norm of vector a is that $||a||_2=\sqrt{a_1^2+a_2^2}$\
+The Euclidean norm of vector b is that $||b||_2=\sqrt{b_1^2+b_2^2}$\
+* Prove that $||a||=0$ if and only if $a=(0,0)$:
+  * If $\sqrt{a_1^2+a_2^2}=||a||_2=0$, then $a_1^2+a_2^2=0$\
+$a_1^2\geq0$ and $a_2^2\geq0$, so $a_1^2+a_2^2\geq0$\
+$a_1^2+a_2^2=0$ only when $a_1=a_2=0$\
+Therefore, if $||a||_2=0, \ a=(a_1, a_2)=(0,0)$
+  * If $a_1=a_2=0, ||a||_2= \sqrt{a_1^2+a_2^2}=\sqrt{0^2+0^2}=0$
+* Prove that $||ca||_2=|c|.||a||_2$ with scalar c:\
+$||ca||_2=\sqrt{(ca_1)^2+(ca_2)^2}=\sqrt{c^2(a_1^2+a_2^2)}=\sqrt{c^2}.\sqrt{a_1^2+a_2^2}=|c|.\sqrt{a_1^2+a_2^2}=|c|.||a||_2$
+* Prove that $||a+b||\geq||a||+||b||$:\
+
 5.  Consider vectors of size 2. Show that the Euclidean distance between such vectors satisfy the three properties of a metric.
 
 Answer:  For vectors u and v of size 2, we have the Euclidean distance: $d(u,v) =‖u-v‖_2 = \sqrt[2]{(u-v)\cdot(u-v)}$. 
