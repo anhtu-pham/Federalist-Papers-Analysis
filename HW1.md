@@ -166,34 +166,34 @@ AB=\left[
     \begin{array}{ccc}
         1&2&3\\
         4&5&6\\
-        7&8&9\\
+        7&8&9
     \end{array}
 \right]
 \left[
     \begin{array}{ccc}
         1&1&0\\
         0&1&1\\
-        1&0&1\\
+        1&0&1
     \end{array}
 \right]=\left[
     \begin{array}{ccc}
         1\times1+2\times0+3\times1&1\times1+2\times1+3\times0&1\times0+2\times1+3\times1\\
         4\times1+5\times0+6\times1&4\times1+5\times1+6\times0&4\times0+5\times1+6\times1\\
-        7\times1+8\times0+9\times1&7\times1+8\times1+9\times0&7\times0+8\times1+9\times1\\
+        7\times1+8\times0+9\times1&7\times1+8\times1+9\times0&7\times0+8\times1+9\times1
     \end{array}
 \right]=\left[
     \begin{array}{ccc}
         4&3&5\\
         10&9&11\\
-        16&15&17\\
+        16&15&17
     \end{array}
 \right]
 \
 (ii)\
-$AB=\left[
+AB=\left[
     \begin{array}{cccc}
         1&2&1&2\\
-        4&1&-1&-4\\
+        4&1&-1&-4
     \end{array}
 \right]
 \left[
@@ -201,40 +201,39 @@ $AB=\left[
         0&3\\
         1&-1\\
         2&1\\
-        5&2\\
+        5&2
     \end{array}
 \right]=\left[
     \begin{array}{cc}
         1\times0+2\times1+1\times2+2\times5&1\times3+2\times(-1)+1\times1+2\times2\\
-        4\times0+1\times1+(-1)\times2+(-4)\times5&4\times3+1\times(-1)+(-1)\times1+(-4)\times2\\
+        4\times0+1\times1+(-1)\times2+(-4)\times5&4\times3+1\times(-1)+(-1)\times1+(-4)\times2
     \end{array}
 \right]=\left[
     \begin{array}{cc}
         14&6\\
-        -21&2\\
-    \end{array}
-\right]
-\
-(iii)\
+        -21&2
+    \end{array}  
+\right]    
+(iii)     
 AB= \left[
     \begin{array}{cc}
         0&3\\
         1&-1\\
         2&1\\
-        5&2\\
-    \end{array}
+        5&2
+    \end{array}  
 \right]
 \left[
     \begin{array}{cccc}
         1&2&1&2\\
-        4&1&-1&-4\\
+        4&1&-1&-4
     \end{array}
 \right]=\left[
     \begin{array}{cccc}
         0\times1+3\times4&0\times2+3\times1&0\times1+3\times(-1)&0\times2+3\times(-4)\\
         1\times1+(-1)\times4&1\times2+(-1)\times1&1\times1+(-1)\times(-1)&1\times2+(-1)\times(-4)\\
         2\times1+1\times4&2\times2+1\times1&2\times1+1\times(-1)&2\times2+1\times(-4)\\
-        5\times1+2\times4&5\times2+2\times1&5\times1+2\times(-1)&5\times2+2\times(-4)\\
+        5\times1+2\times4&5\times2+2\times1&5\times1+2\times(-1)&5\times2+2\times(-4)
     \end{array}
 \right]=\left[
     \begin{array}{cccc}
