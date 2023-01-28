@@ -205,7 +205,7 @@ Explanation:
 
 Answer:
 ```math
-(i)\
+(i)<br />
 AB=\left[
     \begin{array}{ccc}
         1&2&3\\
@@ -232,7 +232,7 @@ AB=\left[
         16&15&17
     \end{array}
 \right]
-\
+<br />
 (ii)\
 AB=\left[
     \begin{array}{cccc}
@@ -258,7 +258,8 @@ AB=\left[
         -21&2
     \end{array}  
 \right]    
-(iii)     
+<br />
+(iii)  <br />
 AB= \left[
     \begin{array}{cc}
         0&3\\
