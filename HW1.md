@@ -127,9 +127,11 @@ and turn the matrix into its reduced row form:
 \right]
 ```
 $\quad$ The equations representation of this matrix shows us this is an equation with infinite solutions since there are three unknowns and only two equations:
+
 ```math
 \begin{cases} 1a  + 2c = 0 \\  b -c =0  \end{cases}
 ```
+
 $\quad$ We have $a = -2; b = c = 1$ as a solution for the system and therefore there exists a linear combination of 
 ```math
 \begin{gather}
@@ -145,6 +147,7 @@ $\quad$ We have $a = -2; b = c = 1$ as a solution for the system and therefore t
  0
 \end{gather}
 ```
+
 $\qquad\qquad\qquad\qquad\qquad\qquad\Longrightarrow$ The vectors are linearly dependant
 
 8. Write $[1, -2, 5]$ as a linear combination of $[1, 1, 1]$, $[1, 2, 3]$ and $[2, -1, 1]$.
