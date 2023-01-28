@@ -230,7 +230,8 @@ AB=\left[
         16&15&17
     \end{array}
 \right]
-<br />
+```
+```math
 (ii)\
 AB=\left[
     \begin{array}{cccc}
@@ -256,7 +257,8 @@ AB=\left[
         -21&2
     \end{array}  
 \right]    
-<br />
+```
+```math
 (iii)  <br />
 AB= \left[
     \begin{array}{cc}
