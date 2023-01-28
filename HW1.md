@@ -76,11 +76,14 @@ We can proof the $1^{st}$ metric property directly  :
 ```
 Similarly for the $2^{nd}$ property: 
 $\quad$ For $u=v\Longrightarrow u-v=0:$
-					 $ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{0\cdot0}=0$
+					 $d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{0\cdot0}=0$
 $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$	
 ```math
-				      d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2} =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )
-				      ```
+				      d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2} =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2)
+```				      
+				      
+				      
+				      
 				      
 Finally, we prove the third property by contradiction:
 
@@ -167,7 +170,7 @@ Explanation:
     \begin{array}{ccc|c}
         1&1&2&1\\
         1&2&-1&-2\\
-        1&3&1&5\\
+        1&3&1&5
     \end{array}
 \right]
 ```
@@ -178,7 +181,7 @@ Explanation:
     \begin{array}{ccc|c}
         1&1&2&1\\
         0&1&-3&-3\\
-        0&0&5&10\\
+        0&0&5&10
     \end{array}
 \right]
 ```
@@ -188,46 +191,46 @@ Explanation:
 \begin{cases} 1a + 1b + 1c = 1 \\ 0a + 1b -3c = -3 \\ 0a + 0b + 5c =10 \end{cases}
 ```
 
-* The simple steps remain. I back-substitute and find out $ a=-6; b=3; c=2. $
+* The simple steps remain. I back-substitute and find out $a=-6; b=3; c=2.$
 
 
 9. Compute the matrix products $AB$ where: (i) $A=[1, 2, 3; 4, 5, 6; 7, 8, 9]$ and $B=[1, 1, 0; 0, 1, 1; 1, 0, 1]$ (ii) $A=[1, 2, 1, 2; 4, 1, -1, -4]$ and $B=[0, 3; 1, -1; 2, 1; 5, 2]$ (iii) $A=[0, 3; 1, -1; 2, 1; 5, 2]$ and $B=[1, 2, 1, 2; 4, 1, -1, -4]$.
 
 Answer:
-
+```math
 (i)\
-$AB=\left[
+AB=\left[
     \begin{array}{ccc}
         1&2&3\\
         4&5&6\\
-        7&8&9\\
+        7&8&9
     \end{array}
 \right]
 \left[
     \begin{array}{ccc}
         1&1&0\\
         0&1&1\\
-        1&0&1\\
+        1&0&1
     \end{array}
 \right]=\left[
     \begin{array}{ccc}
         1\times1+2\times0+3\times1&1\times1+2\times1+3\times0&1\times0+2\times1+3\times1\\
         4\times1+5\times0+6\times1&4\times1+5\times1+6\times0&4\times0+5\times1+6\times1\\
-        7\times1+8\times0+9\times1&7\times1+8\times1+9\times0&7\times0+8\times1+9\times1\\
+        7\times1+8\times0+9\times1&7\times1+8\times1+9\times0&7\times0+8\times1+9\times1
     \end{array}
 \right]=\left[
     \begin{array}{ccc}
         4&3&5\\
         10&9&11\\
-        16&15&17\\
+        16&15&17
     \end{array}
 \right]
-$\
+\
 (ii)\
-$AB=\left[
+AB=\left[
     \begin{array}{cccc}
         1&2&1&2\\
-        4&1&-1&-4\\
+        4&1&-1&-4
     \end{array}
 \right]
 \left[
@@ -235,40 +238,39 @@ $AB=\left[
         0&3\\
         1&-1\\
         2&1\\
-        5&2\\
+        5&2
     \end{array}
 \right]=\left[
     \begin{array}{cc}
         1\times0+2\times1+1\times2+2\times5&1\times3+2\times(-1)+1\times1+2\times2\\
-        4\times0+1\times1+(-1)\times2+(-4)\times5&4\times3+1\times(-1)+(-1)\times1+(-4)\times2\\
+        4\times0+1\times1+(-1)\times2+(-4)\times5&4\times3+1\times(-1)+(-1)\times1+(-4)\times2
     \end{array}
 \right]=\left[
     \begin{array}{cc}
         14&6\\
-        -21&2\\
-    \end{array}
-\right]
-$\
-(iii)\
-$AB= \left[
+        -21&2
+    \end{array}  
+\right]    
+(iii)     
+AB= \left[
     \begin{array}{cc}
         0&3\\
         1&-1\\
         2&1\\
-        5&2\\
-    \end{array}
+        5&2
+    \end{array}  
 \right]
 \left[
     \begin{array}{cccc}
         1&2&1&2\\
-        4&1&-1&-4\\
+        4&1&-1&-4
     \end{array}
 \right]=\left[
     \begin{array}{cccc}
         0\times1+3\times4&0\times2+3\times1&0\times1+3\times(-1)&0\times2+3\times(-4)\\
         1\times1+(-1)\times4&1\times2+(-1)\times1&1\times1+(-1)\times(-1)&1\times2+(-1)\times(-4)\\
         2\times1+1\times4&2\times2+1\times1&2\times1+1\times(-1)&2\times2+1\times(-4)\\
-        5\times1+2\times4&5\times2+2\times1&5\times1+2\times(-1)&5\times2+2\times(-4)\\
+        5\times1+2\times4&5\times2+2\times1&5\times1+2\times(-1)&5\times2+2\times(-4)
     \end{array}
 \right]=\left[
     \begin{array}{cccc}
@@ -278,4 +280,4 @@ $AB= \left[
         13&12&3&2
     \end{array}
 \right]
-$
+```
