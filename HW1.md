@@ -6,6 +6,8 @@
 
 Answer:
 
+Data science benefits people’s lives in a variety of ways. For companies and businesses, data science can be utilized to identify noteworthy data and pattern, develop predictive fraud propensity models using statistical, network, path, and big data approaches, and use these models to generate alerts, which help making prompt reactions when unusual data is detected. Moreover, by evaluating data obtained in the database, businesses can identify the best-selling products, determine when and where they can sell the most products. With this valuable information, businesses are able to offer the correct products at appropriate time and develop new products to fulfill the customers’ needs. With regard to environment protection, data science can help prevent the climate change’s damage, which negatively affects people’s lives. A reporting platform called Climate Data Partnership was designed with the collaboration of The California Air Resources Board, Plant Labs and the Environmental Defense Fund to support more focused climate control actions. With data collected from distinct, overlapping data projects, including two satellite deployments to track climate change on the Earth from outer space, and data from organizations monitoring deforestation and other information on the ground, we may have a clearer view of the Earth’s current condition, find answers to the big questions about the climate change, and increase transparency regarding how global supply networks affect the Earth. Data science is also a crucial tool to help people meet essential needs. Each year, Benefits Data Trust, a grantee of The Rockefeller Foundation organization, utilizes the data, policy change, targeted outreach, and new technologies to help people receive essential assistance. Benefits Data Trust successfully submitted more than 800,000 applications and secured more than 7 billion dollars in benefits and services that aided people and families in achieving financial stability and opened a better path for them in the future.
+
 2. Write a short essay (~300 words) about the negative impacts of data science on our lives. This could include some of the issues discussed in class, or other impacts you have read about elsewhere. Cite all sources appropriately.
 
 Answer:
@@ -39,7 +41,6 @@ Sources:
 -   "Natural Language Processing (NLP)". https://en.wikipedia.org/wiki/Natural_language_processing. 
 -   "Natural Language Processing in Healthcare". https://www.healthcatalyst.com/insights/how-healthcare-nlp-taps-unstructured-datas-potential
 -   "Data types (Transact-SQL)". https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
-4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
 4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
@@ -49,6 +50,7 @@ Let a and b be 2 arbitrary vectors of size 2.\
 $a=[a_1, a_2], \ b=[b_1,b_2]$\
 The Euclidean norm of vector a is that $||a||_2=\sqrt{a_1^2+a_2^2}$\
 The Euclidean norm of vector b is that $||b||_2=\sqrt{b_1^2+b_2^2}$\
+Prove that they satisfy the three properties of a norm:
 * Prove that $||a||=0$ if and only if $a=(0,0)$:
   * If $\sqrt{a_1^2+a_2^2}=||a||_2=0$, then $a_1^2+a_2^2=0$\
 $a_1^2\geq0$ and $a_2^2\geq0$, so $a_1^2+a_2^2\geq0$\
@@ -57,7 +59,11 @@ Therefore, if $||a||_2=0, \ a=(a_1, a_2)=(0,0)$
   * If $a_1=a_2=0, ||a||_2= \sqrt{a_1^2+a_2^2}=\sqrt{0^2+0^2}=0$
 * Prove that $||ca||_2=|c|.||a||_2$ with scalar c:\
 $||ca||_2=\sqrt{(ca_1)^2+(ca_2)^2}=\sqrt{c^2(a_1^2+a_2^2)}=\sqrt{c^2}.\sqrt{a_1^2+a_2^2}=|c|.\sqrt{a_1^2+a_2^2}=|c|.||a||_2$
-* Prove that $||a+b||\geq||a||+||b||$:\
+* Prove that $||a+b||_2 \leq ||a||_2+||b||_2$:\
+$(||a+b||_2)^2=(||(a_1+b_1, a_2+b_2)||_2)^2=(\sqrt{(a_1+b_1)^2+(a_2+b_2)^2})^2=(a_1+b_1)^2+(a_2+b_2)^2=a_1^2+b_1^2+a_2^2+b_2^2+2a_1b_1+2a_2b_2=a_1^2+a_2^2+b_1^2+b_2^2+2(a_1b_1+a_2b_2)$\
+$(||a||_2+||b||_2)^2=||a||_2^2+||b||_2^2+2||a||_2.||b||_2=a_1^2+a_2^2+b_1^2+b_2^2+2\sqrt{{(a_1^2+a_2^2)(b_1^2+b_2^2)}}$\
+$2\sqrt{{(a_1^2+a_2^2)(b_1^2+b_2^2)}}=2\sqrt{a_1^2b_1^2+a_1^2b_2^2+a_2^2b_1^2+a_2^2b_2^2}\geq 2\sqrt{a_1^2b_1^2+a_2^2b_2^2+2a_1b_2a_2b_1}=2|a_1b_1+a_2b_2|\geq 2(a_1b_1+a_2b_2)$\
+Therefore, $(||a+b||_2)^2 \leq (||a||_2+||b||_2)^2$, which means that $||a+b||_2 \leq ||a||_2+||b||_2$ because $||a+b||_2, ||a||,$ and $||b||$ are non-negative.
 
 5.  Consider vectors of size 2. Show that the Euclidean distance between such vectors satisfy the three properties of a metric.
 
@@ -77,7 +83,7 @@ Answer:
 * Set $a=[1, 2, 3]$, $b=[-1, -1, 0]$.
 * Calculate the 1-norm for the vectors.
 $$
-a = |1+2+3| = 6 ; b = |-1-1+0| = 2
+||a||_1 = |1+2+3| = 6 ; ||b||_1 = |-1-1+0| = 2
 $$
 
 * Calculate the 1-norm distance for 2 vectors.
@@ -154,3 +160,88 @@ $$
 9. Compute the matrix products $AB$ where: (i) $A=[1, 2, 3; 4, 5, 6; 7, 8, 9]$ and $B=[1, 1, 0; 0, 1, 1; 1, 0, 1]$ (ii) $A=[1, 2, 1, 2; 4, 1, -1, -4]$ and $B=[0, 3; 1, -1; 2, 1; 5, 2]$ (iii) $A=[0, 3; 1, -1; 2, 1; 5, 2]$ and $B=[1, 2, 1, 2; 4, 1, -1, -4]$.
 
 Answer:
+
+(i)\
+$AB=\left[
+    \begin{array}{ccc}
+        1&2&3\\
+        4&5&6\\
+        7&8&9\\
+    \end{array}
+\right]
+\left[
+    \begin{array}{ccc}
+        1&1&0\\
+        0&1&1\\
+        1&0&1\\
+    \end{array}
+\right]=\left[
+    \begin{array}{ccc}
+        1\times1+2\times0+3\times1&1\times1+2\times1+3\times0&1\times0+2\times1+3\times1\\
+        4\times1+5\times0+6\times1&4\times1+5\times1+6\times0&4\times0+5\times1+6\times1\\
+        7\times1+8\times0+9\times1&7\times1+8\times1+9\times0&7\times0+8\times1+9\times1\\
+    \end{array}
+\right]=\left[
+    \begin{array}{ccc}
+        4&3&5\\
+        10&9&11\\
+        16&15&17\\
+    \end{array}
+\right]
+$\
+(ii)\
+$AB=\left[
+    \begin{array}{cccc}
+        1&2&1&2\\
+        4&1&-1&-4\\
+    \end{array}
+\right]
+\left[
+    \begin{array}{cc}
+        0&3\\
+        1&-1\\
+        2&1\\
+        5&2\\
+    \end{array}
+\right]=\left[
+    \begin{array}{cc}
+        1\times0+2\times1+1\times2+2\times5&1\times3+2\times(-1)+1\times1+2\times2\\
+        4\times0+1\times1+(-1)\times2+(-4)\times5&4\times3+1\times(-1)+(-1)\times1+(-4)\times2\\
+    \end{array}
+\right]=\left[
+    \begin{array}{cc}
+        14&6\\
+        -21&2\\
+    \end{array}
+\right]
+$\
+(iii)\
+$AB= \left[
+    \begin{array}{cc}
+        0&3\\
+        1&-1\\
+        2&1\\
+        5&2\\
+    \end{array}
+\right]
+\left[
+    \begin{array}{cccc}
+        1&2&1&2\\
+        4&1&-1&-4\\
+    \end{array}
+\right]=\left[
+    \begin{array}{cccc}
+        0\times1+3\times4&0\times2+3\times1&0\times1+3\times(-1)&0\times2+3\times(-4)\\
+        1\times1+(-1)\times4&1\times2+(-1)\times1&1\times1+(-1)\times(-1)&1\times2+(-1)\times(-4)\\
+        2\times1+1\times4&2\times2+1\times1&2\times1+1\times(-1)&2\times2+1\times(-4)\\
+        5\times1+2\times4&5\times2+2\times1&5\times1+2\times(-1)&5\times2+2\times(-4)\\
+    \end{array}
+\right]=\left[
+    \begin{array}{cccc}
+        12&3&-3&-12\\
+        -3&1&2&6\\
+        6&5&1&0\\
+        13&12&3&2
+    \end{array}
+\right]
+$
