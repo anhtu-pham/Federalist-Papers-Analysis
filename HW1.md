@@ -79,8 +79,11 @@ $\quad$ For $u=v\Longrightarrow u-v=0:$
 					 $ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{0\cdot0}=0$
 $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$	
 ```math
-				      d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2} =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )
-				      ```
+				      d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2} =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2)
+```				      
+				      
+				      
+				      
 				      
 Finally, we prove the third property by contradiction:
 $(u,y) + d(y,v) < d(u,v)$
