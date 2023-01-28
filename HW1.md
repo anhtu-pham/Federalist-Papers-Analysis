@@ -70,12 +70,18 @@ Therefore, $(||a+b||_2)^2 \leq (||a||_2+||b||_2)^2$, which means that $||a+b||_2
 5.  Consider vectors of size 2. Show that the Euclidean distance between such vectors satisfy the three properties of a metric.
 
 Answer:  For vectors u and v of size 2, we have the Euclidean distance: $d(u,v) =‖u-v‖_2 = \sqrt[2]{(u-v)\cdot(u-v)}$. 
-We can proof the $1^{st}$ metric property directly  : $$ \sqrt[2]{(u-v)\cdot(u-v)}  =\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}=\sqrt[2]{(v_1-u_1)^2+(v_2-u_2)^2}$$ $$= \sqrt[2]{(v-u)\cdot(v-u)}=‖v-u‖_2=d(v, u) = d(u,v)$$
+We can proof the $1^{st}$ metric property directly  : 
+```math
+\sqrt[2]{(u-v)\cdot(u-v)}  =\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}=\sqrt[2]{(v_1-u_1)^2+(v_2-u_2)^2} = \sqrt[2]{(v-u)\cdot(v-u)}=‖v-u‖_2=d(v, u) = d(u,v)
+```
 Similarly for the $2^{nd}$ property: 
 $\quad$ For $u=v\Longrightarrow u-v=0:$
 					 $ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{0\cdot0}=0$
-$\quad$ For $u\neq v\Longrightarrow u-v\neq0:$				
-				     $$ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}$$ $$ =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )$$
+$\quad$ For $u\neq v\Longrightarrow u-v\neq0:$	
+```math
+				      d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2} =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )
+				      ```
+				      
 Finally, we prove the third property by contradiction:
 $(u,y) + d(y,v) < d(u,v)$
 
