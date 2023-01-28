@@ -69,7 +69,10 @@ $\quad$ For $u=v\Longrightarrow u-v=0:$
 $\quad$ For $u\neq v\Longrightarrow u-v\neq0:$				
 				     $$ d(u,v) = \sqrt[2]{(u-v)\cdot(u-v)}=\sqrt[2]{(u_1-v_1)^2+(u_2-v_2)^2}$$ $$ =\sqrt[2]{a^2+b^2} \geq\sqrt[2]{0+0}=0 (\forall u-v\neq 0 \Longrightarrow a , b  \neq 0 | a=u_1-v_1; b = u_2-v_2  )$$
 Finally, we prove the third property by contradiction:
-$\quad$ Suppose that$\quad d(u,y) + d(y,v) < d(u,v)$
+
+$\quad$ Suppose that $ d(u,y) + d(y,v) < d(u,v)$.
+While $u$ to $y$ and  $y$ to $v$ is a connected path from $u$ to $v$, it is not possible for $d(u,y) + d(y,v)$ to be a shorter path than $d(u,v)$ as by definition the Euclidean space represents the shortest distance between two points. Hence $d(u,v )$ is the smallest distance of any paths from $u$ to $v$ and therefore $d(u,y) + d(y,v) < d(u,v)$ is a false statement. 
+$$ \Longrightarrow d(u,y) + d(y,v) \geq d(u,v)$$
 
 6. Consider the vectors $[1, 2, 3]$ and $[-1, -1, 0]$. Compute the Manhattan norms of each vector and the Manhattan distance between them.
 
@@ -85,12 +88,46 @@ $$
 ||a-b||_1=|1-(-1)| + |2-(-1)| + |3-0|= 8
 $$
 
-7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$?
+7. Are the following vectors linearly independent? $[2, -1, 3]$, $[1, 1, -2]$ and $[3, -3, 8]$? 
 
-Answer: We can calculate the determinant of a $3\times3$ matrix $$|2, 1, 3|$$ $$|-1, 1, -3|$$ $$|3,-2,8|$$ formed by the three vector to determinate whether the vectors are linearly dependent or not:
-$\quad$ By using cofactor expansion the answer is given by:
-					$$ 2\times (-1)^{1+1}\times [(1 \times 8)- (-3\times-2)] + $$ $$ 1\times (-1)^{1+2}\times [(-1 \times 8)- (-3\times3)] + 3\times (-1)^{1+3}\times [(-1 \times -2)- (3\times1)] $$ $$ = 4-1-3=0$$
-Since the matrix determinant is zero, the vectors are linearly dependent
+Answer: We can perform operations on the $3\times3$ matrix 
+$$\left[
+    \begin{array}{ccc}
+        2&1&3\\
+        -1&1&-3\\
+        3&-2&8\\
+    \end{array}
+\right]
+$$ 
+and turn the matrix into its reduced row form: 
+$$\left[
+    \begin{array}{ccc}
+        1&0&2\\
+        0&1&-1\\
+        0&0&0\\
+    \end{array}
+\right]
+$$ 
+$\quad$ The equations representation of this matrix shows us this is an equation with infinite solutions since there are three unknowns and only two equations:
+$$
+\begin{cases} 1a  + 2c = 0 \\  b -c =0  \end{cases}
+$$
+$\quad$ We have $a = -2; b = c = 1$ as a solution for the system and therefore there exists a linear combination of 
+$$
+\begin{gather}
+-2
+ [2, -1, 3]
++
+
+ [1, 1, -2]
++
+
+ [3, -3, 8]
+ =
+ 0
+\end{gather}
+$$
+$\qquad\qquad\qquad\qquad\qquad\qquad\Longrightarrow$ The vectors are linearly dependant
 
 8. Write $[1, -2, 5]$ as a linear combination of $[1, 1, 1]$, $[1, 2, 3]$ and $[2, -1, 1]$.
 
