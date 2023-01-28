@@ -39,7 +39,6 @@ Sources:
 -   "Natural Language Processing (NLP)". https://en.wikipedia.org/wiki/Natural_language_processing. 
 -   "Natural Language Processing in Healthcare". https://www.healthcatalyst.com/insights/how-healthcare-nlp-taps-unstructured-datas-potential
 -   "Data types (Transact-SQL)". https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
-4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
 4. Consider vectors of size 2. Show that the Euclidean norm of such vectors satisfy the three properties of a norm.
 
@@ -115,16 +114,6 @@ Explanation:
 
 * First I compute the matrices that we need to find combination into a big matrix.
 
-$$
-	% \begin{bmatrix}
-	% 1 & 1 & 2\\
-	% 1 & 2 & -1\\
-	% 1 & 3 & 1\\
-    % \right\rvert
-	% \end{bmatrix}
-
-
-$$
 
 $$\left[
     \begin{array}{ccc|c}
