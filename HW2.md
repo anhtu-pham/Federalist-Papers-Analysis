@@ -9,7 +9,11 @@ Answer:
 
 2. Find a vector orthogonal to (4, 1, -2). Show your work. 
 
-Answer:
+Answer: 
+```julia
+    a = [4,1,-2]
+    b = 0/a
+```
 
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
