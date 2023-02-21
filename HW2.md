@@ -14,7 +14,12 @@ Answer:
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
 
-Answer: 
+Answer: First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3.
+
+```julia
+A = [1 1 1; 1 2 3; 2 2 2; 3 4 5; 0 1 0; 1 0 1]
+println(rank(A))
+```
 
 4. Add vectors to U in Q3 to create a new set V so that (i) dim(V)=dim(U) and (ii) V has an orthonormal basis B. Write out the basis B and show it is orthonormal.
 
