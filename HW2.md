@@ -5,7 +5,11 @@ Note: Questions which ask you to "prove" something often require a general argum
 
 1. Find the angle between the vectors (1, 2) and (-1, -1). Show your work.
 
-Answer:
+Answer:\
+Let $x=(1,2)$, $y=(-1,-1)$.\
+Let $\theta$ be the angle between the given vectors.\
+Then $cos \ \theta= {x.y\over ||x||_2||y||_2}={(1,2).(-1,-1)\over||(1,2)||_2||(-1,-1)||_2}={1\times(-1)+2\times(-1)\over \sqrt{1^2+2^2}\times\sqrt{(-1)^2+(-1)^2}}={-3\over\sqrt{10}}$\
+Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565$
 
 2. Find a vector orthogonal to (4, 1, -2). Show your work. 
 
@@ -35,7 +39,7 @@ Answer:
 
 6. Prove that for any set of vectors U with a finite basis B, each vector in U has unique coordinates with respect to B.
 
-Answer: 
+Answer: Tu's
 
 7. Compute the outer product between the vectors: (i) (-1, 1) and (2, 3) (ii) (1, 3, 5, 7) and (0, 1, 1, 0). Show your work.
 
@@ -44,6 +48,8 @@ Answer:
 8. Compute the unit vector in the same direction as (i) (1, 3) and (ii) (0.1, 0.2, 0.4, 0.2). Show your work.
 
 Answer:
+(i) Unit vector in the same direction as (1, 3) is equal to ${(1,3)\over||(1,3)||_2}={(1,3)\over\sqrt{1^2+3^2}}={(1,3)\over\sqrt{10}}=({1\over \sqrt{10}}, {3\over \sqrt{10}})$\
+(ii) Unit vector in the same direction as (0.1, 0.2, 0.4, 0.2) is equal to ${(0.1, 0.2, 0.4, 0.2)\over||(0.1, 0.2, 0.4, 0.2)||_2}={(0.1, 0.2, 0.4, 0.2)\over\sqrt{0.1^2+0.2^2+0.4^2+0.2^2}}={(0.1, 0.2, 0.4, 0.2)\over 0.5}=({0.1\over 0.5}, {0.2\over 0.5}, {0.4 \over 0.5}, {0.2 \over 0.5})=(0.2, 0.4, 0.8, 0.4)$
 
 9. Suppose B is a matrix containing n orthonormal basis vectors as the columns. What is $B^{T}B$ and why?
 
@@ -59,4 +65,4 @@ Answer:
 
 12. Find the distance between the projection of x and span(b1, b2, b3) in Q7. Show your work.
 
-Answer: 
+Answer: Tu's
