@@ -35,7 +35,16 @@ Answer:
 
 6. Prove that for any set of vectors U with a finite basis B, each vector in U has unique coordinates with respect to B.
 
-Answer: Tu's
+Answer: Tu's\
+Let $b_1,b_2,...,b_n$ be vectors in the finite basis B (n is number of vectors in B).\
+Let u be any vector in U.\
+Let $p_1,p_2,...,p_n$ be the coordinates of u with respect to B, then $u=p_1b_1+p_2b_2+...+p_nb_n$.\
+Suppose that $q_1,q_2,...,q_n$ are also the coordinates of u with respect to B, then $u=q_1b_1+q_2b_2+...+q_nb_n$.\
+Therefore,$$p_1b_1+p_2b_2+...+p_nb_n=q_1b_1+q_2b_2+...+q_nb_n$$ $$(p_1b_1-q_1b_1)+(p_2b_2-q_2b_2)+...+(p_nb_n-q_nb_n)=0$$ $$(p_1-q_1)b_1+(p_2-q_2)b_2+...+(p_n-q_n)b_n=0$$
+Moreover, $b_1,b_2,...,b_n$ are linearly independent because they are vectors in the basis B.\
+As a result, $p_1-q_1=p_2-q_2=...=p_n-q_n$.\
+This means that $p_1=q_1, p_2=q_2,...,p_n=q_n$.\
+Therefore, the coordinates of each vector in U with respect to B are unique.
 
 7. Compute the outer product between the vectors: (i) (-1, 1) and (2, 3) (ii) (1, 3, 5, 7) and (0, 1, 1, 0). Show your work.
 
@@ -43,7 +52,7 @@ Answer:
 
 8. Compute the unit vector in the same direction as (i) (1, 3) and (ii) (0.1, 0.2, 0.4, 0.2). Show your work.
 
-Answer:
+Answer:\
 (i) Unit vector in the same direction as (1, 3) is equal to ${(1,3)\over||(1,3)||_2}={(1,3)\over\sqrt{1^2+3^2}}={(1,3)\over\sqrt{10}}=({1\over \sqrt{10}}, {3\over \sqrt{10}})$\
 (ii) Unit vector in the same direction as (0.1, 0.2, 0.4, 0.2) is equal to ${(0.1, 0.2, 0.4, 0.2)\over||(0.1, 0.2, 0.4, 0.2)||_2}={(0.1, 0.2, 0.4, 0.2)\over\sqrt{0.1^2+0.2^2+0.4^2+0.2^2}}={(0.1, 0.2, 0.4, 0.2)\over 0.5}=({0.1\over 0.5}, {0.2\over 0.5}, {0.4 \over 0.5}, {0.2 \over 0.5})=(0.2, 0.4, 0.8, 0.4)$
 
@@ -61,4 +70,4 @@ Answer:
 
 12. Find the distance between the projection of x and span(b1, b2, b3) in Q7. Show your work.
 
-Answer: Tu's
+Answer:
