@@ -14,10 +14,6 @@ Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565$
 2. Find a vector orthogonal to (4, 1, -2). Show your work. 
 
 Answer: 
-```julia
-    a = [4,1,-2]
-    b = 0/a
-```
 Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1 and x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: $$4 + (-4) + -2x_3 = 0$$ $$\Leftrightarrow -2x_3 = 0$$ $$\Leftrightarrow x_3 =0$$. We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
 
 
@@ -44,6 +40,18 @@ Answer: Tu's
 
 7. Compute the outer product between the vectors: (i) (-1, 1) and (2, 3) (ii) (1, 3, 5, 7) and (0, 1, 1, 0). Show your work.
 
+Answer:  
+```julia
+  a_1 = [-1, 1]
+  b_1 = [2, 3]
+  a_2 = [1, 3, 5, 7]
+  b_2 = [0, 1, 1, 0]
+
+  #(i)
+  println(b_1*a_1')
+  #(ii)
+  println(b_2*a_2')
+```
 
 8. Compute the unit vector in the same direction as (i) (1, 3) and (ii) (0.1, 0.2, 0.4, 0.2). Show your work.
 
