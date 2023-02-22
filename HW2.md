@@ -14,6 +14,7 @@ Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565$
 2. Find a vector orthogonal to (4, 1, -2). Show your work. 
 
 Answer: 
+
 Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1 and x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: $$4 + (-4) + -2x_3 = 0$$ $$\Leftrightarrow -2x_3 = 0$$ $$\Leftrightarrow x_3 =0$$. We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
 
 
@@ -78,8 +79,11 @@ Answer:
 ```julia 
     A=[2 4 3; 0 1 3]
     B=[-2 -1 3; 6 -7 7]
+    #(i)
     println(rank(A))
+    #(ii)
     println(rank(B))
+    #(iii)
     println(rank(A+B))
 ```
 
