@@ -43,7 +43,7 @@ Answer:
 
 8. Compute the unit vector in the same direction as (i) (1, 3) and (ii) (0.1, 0.2, 0.4, 0.2). Show your work.
 
-Answer: Tu's.\
+Answer:
 (i) Unit vector in the same direction as (1, 3) is equal to ${(1,3)\over||(1,3)||_2}={(1,3)\over\sqrt{1^2+3^2}}={(1,3)\over\sqrt{10}}=({1\over \sqrt{10}}, {3\over \sqrt{10}})$\
 (ii) Unit vector in the same direction as (0.1, 0.2, 0.4, 0.2) is equal to ${(0.1, 0.2, 0.4, 0.2)\over||(0.1, 0.2, 0.4, 0.2)||_2}={(0.1, 0.2, 0.4, 0.2)\over\sqrt{0.1^2+0.2^2+0.4^2+0.2^2}}={(0.1, 0.2, 0.4, 0.2)\over 0.5}=({0.1\over 0.5}, {0.2\over 0.5}, {0.4 \over 0.5}, {0.2 \over 0.5})=(0.2, 0.4, 0.8, 0.4)$
 
