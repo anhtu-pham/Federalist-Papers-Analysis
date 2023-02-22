@@ -15,7 +15,7 @@ Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565$
 
 Answer: 
 
-Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1 and x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: $$4 + (-4) + -2x_3 = 0$$ $$\Leftrightarrow -2x_3 = 0$$ $$\Leftrightarrow x_3 =0$$. We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
+Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1$ and $x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: $$4 + (-4) + -2x_3 = 0$$ $$\Leftrightarrow -2x_3 = 0$$ $$\Leftrightarrow x_3 =0$$ We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
 
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
