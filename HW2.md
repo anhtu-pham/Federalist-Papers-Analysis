@@ -9,7 +9,7 @@ Answer:\
 Let $x=(1,2)$, $y=(-1,-1)$.\
 Let $\theta$ be the angle between the given vectors.\
 Then $cos \ \theta= {x.y\over ||x||_2||y||_2}={(1,2).(-1,-1)\over||(1,2)||_2||(-1,-1)||_2}={1\times(-1)+2\times(-1)\over \sqrt{1^2+2^2}\times\sqrt{(-1)^2+(-1)^2}}={-3\over\sqrt{10}}$\
-Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565$
+Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565 \ degrees$
 
 2. Find a vector orthogonal to (4, 1, -2). Show your work. 
 
