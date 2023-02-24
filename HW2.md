@@ -20,7 +20,31 @@ Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot pr
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
 
-Answer: First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3.
+Answer: 3.
+
+First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3.
+
+We can confirm this with the definition of dimension of a matrix = number of vectors in the basis of A. 
+
+We can start by finding the independent one.
+
+1 1 1 is the combination of 0 1 0 and 1 0 1.
+Similar with 2 2 2.
+3 4 5 is the combination of 1 2 3 and 2(0 1 0) + 2 (1 0 1).
+
+Then the basis is [0 1 0; 1 0 1; 1 2 3] = 3.
+
+To check this:
+
+a(0, 1, 0) + b(1, 2, 3) + c(1, 0, 1) = (0, 0, 0)
+
+Expanding this equation component-wise, we get the system of linear equations:
+
+b + c = 0 (for the first component)
+2b = 0 (for the second component)
+3b + c = 0 (for the third component)
+
+Then using substitution, this system will be 0 iff a = b = c = 0 iff the vectors in the basis are linearly independent.
 
 ```julia
 A = [1 1 1; 1 2 3; 2 2 2; 3 4 5; 0 1 0; 1 0 1]
@@ -31,7 +55,31 @@ println(rank(A))
 
 Answer: 
 
-5.  For each vector in V in Q4 that is not in B, find its coordinates with respect to B. Show your work.
+Using the Gram-Schmidt Method, we can attain these new goals by creating a set of orthogonal vectors that span the same subspace as our original basis.
+
+First, we need to normalize our old basis.  Our old basis is:
+
+$$\left\lbrace \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}, \begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix}, \begin{pmatrix} 1 \ 0 \ 1 \end{pmatrix} \right\rbrace$$
+
+and called these vectors in this basis $v_1, v_2,$ and $v_3$ respectively.
+
+
+1. We normalize $v_1$ so that is has length of 1.
+$$u_1 = \frac{1}{\left\lVert v_1 \right\rVert}v_1 = \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}$$
+
+2. Finding the orthonormal version of $v_2$, we need to first make sure that it will be orthogonal to $v_1$.
+
+    a. First we need to find the projection of $v_2$ onto $v_1$.
+    $$\operatorname{proj}{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1}u_1 = \frac{\begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix} \cdot \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}}{\begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix} \cdot \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}}\begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix} = \begin{pmatrix} 0 \ 2 \ 0 \end{pmatrix}.
+    $$
+    b. Because $v_2$ is the sum of 2 orthogonal vectors (the projection and the error vector), the error vector is the vector we need, since it also orthogonal to $v_1$.
+    
+    $$w_2 = v_2 - \operatorname{proj}{u_1}(v_2) = \begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix} - \begin{pmatrix} 0 \ 2 \ 0 \end{pmatrix} = \begin{pmatrix} 1 \ 0 \ 3 \end{pmatrix}.$$
+
+    c.
+    $u_2 = \frac{1}{\left\lVert v_2 - \operatorname{proj}{u_1}(v_2) \right\rVert}(v_2 - \operatorname{proj}{u_1}(v_2)) = \frac{1}{\sqrt{5}}\begin{pmatrix} 1 \ 0 \ 2 \end{pmatrix}$
+
+5\.  For each vector in V in Q4 that is not in B, find its coordinates with respect to B. Show your work.
 
 Answer: 
 
