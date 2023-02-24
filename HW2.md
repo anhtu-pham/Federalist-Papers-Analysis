@@ -100,6 +100,6 @@ Answer:
 
 Answer: 
 
-12. Find the distance between the projection of x and span(b1, b2, b3) in Q7. Show your work.
+12. Find the distance between the projection of x and span(b1, b2, b3) in Q11. Show your work.
 
 Answer:
