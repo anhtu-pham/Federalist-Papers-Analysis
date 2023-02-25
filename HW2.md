@@ -121,7 +121,7 @@ b_1 & b_2 & b_3
 -1 & -3 & 4\\
 2 & 1 & 1\\
 0 & -1 & 2\\
-2 & 2 & 1\\
+2 & 2 & 1
 \end{bmatrix}
 ```
 ```math
@@ -129,7 +129,7 @@ B^T=
 \begin{bmatrix}
 0 & -1 & 2 & 0 & 2\\
 1 & -3 & 1 & -1 & 2\\
--3 & 4 & 1 & 2 & 1\\
+-3 & 4 & 1 & 2 & 1
 \end{bmatrix}
 ```
 Therefore, projection of $x$ into $span(b1, b2, b3)$ is that $\pi(x)=B(B^TB)^{-1}B^Tx=(1, -5, -1, -2, 3)$
