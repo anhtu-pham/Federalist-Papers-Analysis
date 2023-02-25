@@ -59,25 +59,32 @@ Using the Gram-Schmidt Method, we can attain these new goals by creating a set o
 
 First, we need to normalize our old basis.  Our old basis is:
 
-$$\left\lbrace \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}, \begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix}, \begin{pmatrix} 1 \ 0 \ 1 \end{pmatrix} \right\rbrace$$
+$$\left\lbrace \begin{pmatrix} 0,1,0 \end{pmatrix}, \begin{pmatrix} 1,  2,  3 \end{pmatrix}, \begin{pmatrix} 1, 0, 1 \end{pmatrix} \right\rbrace$$
 
-and called these vectors in this basis $v_1, v_2,$ and $v_3$ respectively.
+and called these vectors in this basis $u_1, u_2,$ and $u_3$ respectively.
+
+We'll begin by transforming these into $v_1, v_2, v_3$, which are orthogonal vectors using Gram-Schmidt process.
+
+For $u_1$, it is the base vector, so we will have
+$$v_1 = u_1 = (0, 1 ,0)$$
+
+Using this $v_1$, we will begin finding our $v_2$:
+
+$$v_2=u_2-\frac{⟨u_2,v_1⟩}{∥v_1∥^{2}}\cdot v_1 $$
+
+$$v_2=\begin{pmatrix} 1,  2,  3 \end{pmatrix}-\frac{(1, 2, 3)\cdot (0, 1, 0)}{∥(0, 1, 0)∥^{2}}\cdot (0, 1 ,0) $$
+
+$$ \rightarrow v_2 = (1, 0, 3)$$
+
+Using Gram-Schmidt Method, we can similarly find $v_3$:
+$$v_3=u_3-\frac{⟨u_3,v_1⟩}{∥v_1∥^{2}}\cdot v_1 -\frac{⟨u_3,v_2⟩}{∥v_2∥^{2}}\cdot v_2 $$
+
+$$v_3=(1, 0, 1)-\frac{(1, 0, 1)\cdot (0, 1, 0)}{∥(0, 1, 0)∥^{2}}\cdot (0, 1 ,0) -\frac{(1, 0, 1)\cdot (1, 0, 3)}{∥(0, 1, 0)∥^{2}}\cdot (1, 0, 3)$$
+
+$$ \rightarrow v_3 = (\frac{3}{5},0,-\frac{1}{5})$$
 
 
-1. We normalize $v_1$ so that is has length of 1.
-$$u_1 = \frac{1}{\left\lVert v_1 \right\rVert}v_1 = \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}$$
 
-2. Finding the orthonormal version of $v_2$, we need to first make sure that it will be orthogonal to $v_1$.
-
-    a. First we need to find the projection of $v_2$ onto $v_1$.
-    $$\operatorname{proj}{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1}u_1 = \frac{\begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix} \cdot \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}}{\begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix} \cdot \begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix}}\begin{pmatrix} 0 \ 1 \ 0 \end{pmatrix} = \begin{pmatrix} 0 \ 2 \ 0 \end{pmatrix}.
-    $$
-    b. Because $v_2$ is the sum of 2 orthogonal vectors (the projection and the error vector), the error vector is the vector we need, since it also orthogonal to $v_1$.
-    
-    $$w_2 = v_2 - \operatorname{proj}{u_1}(v_2) = \begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix} - \begin{pmatrix} 0 \ 2 \ 0 \end{pmatrix} = \begin{pmatrix} 1 \ 0 \ 3 \end{pmatrix}.$$
-
-    c.
-    $u_2 = \frac{1}{\left\lVert v_2 - \operatorname{proj}{u_1}(v_2) \right\rVert}(v_2 - \operatorname{proj}{u_1}(v_2)) = \frac{1}{\sqrt{5}}\begin{pmatrix} 1 \ 0 \ 2 \end{pmatrix}$
 
 5\.  For each vector in V in Q4 that is not in B, find its coordinates with respect to B. Show your work.
 
