@@ -20,7 +20,7 @@ Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot pr
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
 
-Answer: First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3.
+Answer: First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3. U's dimensionality is equal to this matrix's rank, so dimensionality of U is 3.
 
 ```julia
 A = [1 1 1; 1 2 3; 2 2 2; 3 4 5; 0 1 0; 1 0 1]
@@ -71,6 +71,22 @@ Answer:
   #(ii)
   println(b_2*a_2')
 ```
+The result of part (i) is
+```math
+\begin{bmatrix}
+-2 & 2\\
+-3 & 3
+\end{bmatrix}
+```
+The result of part (ii) is
+```math
+\begin{bmatrix}
+0 & 0 & 0 & 0\\
+1 & 3 & 5 & 7\\
+1 & 3 & 5 & 7\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+```
 
 8. Compute the unit vector in the same direction as (i) (1, 3) and (ii) (0.1, 0.2, 0.4, 0.2). Show your work.
 
@@ -88,7 +104,6 @@ We have $$B^{T}B_{ij}=row_iB^{T}\cdot col_jB=col_iB\cdot col_jB$$ Since the colu
 
 Therefore, we have $B^{T}B$ is a matrix that has 1 in diagonal line and 0 in other entries. In other word, $B^{T}B = I_{n\times n}$; it is an identity matrix with dimension of n by n
 
-
 10. Suppose A=[2, 4, 3; 0, 1, 3] and B=[-2, -1, 3; 6, -7, 7]. Find the ranks of A, B and A+B. Show your work.
 
 Answer:
@@ -104,6 +119,7 @@ Answer:
     #(iii)
     println(rank(A+B))
 ```
+Therefore, ranks of A, B, and A+B are all equal to 2.
 
 11. Suppose b1=(0, -1, 2, 0, 2), b2=(1, -3, 1, -1, 2) and b3=(-3, 4, 1, 2, 1). Find the projection of x=(-1, -9, -1, 4, 1) into span(b1, b2, b3). Show your work.
 
