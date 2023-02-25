@@ -98,7 +98,35 @@ Answer:
 
 11. Suppose b1=(0, -1, 2, 0, 2), b2=(1, -3, 1, -1, 2) and b3=(-3, 4, 1, 2, 1). Find the projection of x=(-1, -9, -1, 4, 1) into span(b1, b2, b3). Show your work.
 
-Answer: 
+Answer:
+$$
+x=(-1, -9, -1, 4, 1)
+$$
+$$
+B=
+\begin{bmatrix}
+b_1 & b_2 & b_3
+\end{bmatrix}=
+\begin{bmatrix}
+0 & 1 & -3\\
+-1 & -3 & 4\\
+2 & 1 & 1\\
+0 & -1 & 2\\
+2 & 2 & 1\\
+\end{bmatrix}
+$$
+$$
+B^T=
+\begin{bmatrix}
+0 & -1 & 2 & 0 & 2\\
+1 & -3 & 1 & -1 & 2\\
+-3 & 4 & 1 & 2 & 1\\
+\end{bmatrix}
+$$
+Therefore, projection of $x$ into $span(b1, b2, b3)$ is as below:
+$$
+\pi(x)=B(B^TB)^{-1}B^Tx=(1, -5, -1, -2, 3)
+$$
 
 12. Find the distance between the projection of x and span(b1, b2, b3) in Q11. Show your work.
 
