@@ -42,7 +42,14 @@ Let $b_1,b_2,...,b_n$ be vectors in the finite basis B (n is number of vectors i
 Let u be any vector in U.\
 Let $p_1,p_2,...,p_n$ be the coordinates of u with respect to B, then $u=p_1b_1+p_2b_2+...+p_nb_n$.\
 Suppose that $q_1,q_2,...,q_n$ are also the coordinates of u with respect to B, then $u=q_1b_1+q_2b_2+...+q_nb_n$.\
-Therefore,$$p_1b_1+p_2b_2+...+p_nb_n=q_1b_1+q_2b_2+...+q_nb_n$$ $$(p_1b_1-q_1b_1)+(p_2b_2-q_2b_2)+...+(p_nb_n-q_nb_n)=0$$ $$(p_1-q_1)b_1+(p_2-q_2)b_2+...+(p_n-q_n)b_n=0$$
+Therefore,
+$$
+p_1b_1+p_2b_2+...+p_nb_n=q_1b_1+q_2b_2+...+q_nb_n
+$$
+$$(p_1b_1-q_1b_1)+(p_2b_2-q_2b_2)+...+(p_nb_n-q_nb_n)=0
+$$
+$$(p_1-q_1)b_1+(p_2-q_2)b_2+...+(p_n-q_n)b_n=0
+$$
 Moreover, $b_1,b_2,...,b_n$ are linearly independent because they are vectors in the basis B.\
 As a result, $p_1-q_1=p_2-q_2=...=p_n-q_n=0$.\
 This means that $p_1=q_1, p_2=q_2,...,p_n=q_n$.\
