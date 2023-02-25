@@ -64,6 +64,7 @@ Therefore, the coordinates of each vector in U with respect to B are unique.
 7. Compute the outer product between the vectors: (i) (-1, 1) and (2, 3) (ii) (1, 3, 5, 7) and (0, 1, 1, 0). Show your work.
 
 Answer:  
+The following is the solution in julia code:
 ```julia
   a_1 = [-1, 1]
   b_1 = [2, 3]
