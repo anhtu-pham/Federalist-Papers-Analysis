@@ -24,6 +24,11 @@ Answer: 3.
 
 First I convert set U into a matrix. Then I use Julia to find the rank of this matrix, which is 3.
 
+```julia
+A = [1 1 1; 1 2 3; 2 2 2; 3 4 5; 0 1 0; 1 0 1]
+println(rank(A)) #  = 3
+```
+
 We can confirm this with the definition of dimension of a matrix = number of vectors in the basis of A. 
 
 We can start by finding the independent one.
@@ -45,11 +50,6 @@ b + c = 0 (for the first component)
 3b + c = 0 (for the third component)
 
 Then using substitution, this system will be 0 iff a = b = c = 0 iff the vectors in the basis are linearly independent.
-
-```julia
-A = [1 1 1; 1 2 3; 2 2 2; 3 4 5; 0 1 0; 1 0 1]
-println(rank(A))
-```
 
 4. Add vectors to U in Q3 to create a new set V so that (i) dim(V)=dim(U) and (ii) V has an orthonormal basis B. Write out the basis B and show it is orthonormal.
 
@@ -83,7 +83,36 @@ $$v_3=(1, 0, 1)-\frac{(1, 0, 1)\cdot (0, 1, 0)}{∥(0, 1, 0)∥^{2}}\cdot (0, 1 
 
 $$ \rightarrow v_3 = (\frac{3}{5},0,-\frac{1}{5})$$
 
+Now we can normalize the 3 vectors by dividing the coordinates with their magnitudes to form the basis.
+$$ B = \left \lbrace {(0,1, 0), (\frac{1}{\sqrt{10}},0, \frac{3}{\sqrt{10}}), (\frac{3}{\sqrt{10}},0, \frac{-1}{\sqrt{10}})} \right \rbrace$$
 
+Checking whether the result is correct:
+
+Using Julia to find the norm and the dot product of each pair:
+
+```julia
+v1 = [0 1 0]
+v2 = [1/sqrt(10) 0 3/sqrt(10)]
+v3 = [3/sqrt(10) 0 -1/sqrt(10)]
+
+println("Magnitude of v1 is $(norm(v1))")
+println("Magnitude of v2 is $(norm(v2))")
+println("Magnitude of v3 is $(norm(v3))")
+println("Dot product of v1, v2 $(dot(v1, v2))")
+println("Dot product of v2, v3 $(dot(v2, v3))")
+println("Dot product of v3, v1 $(dot(v1, v3))")
+```
+```
+Output:
+Magnitude of v1 is 1.0
+Magnitude of v2 is 0.9999999999999999 
+Magnitude of v3 is 0.9999999999999999
+Dot product of v1, v2 0.0
+Dot product of v2, v3 0.0
+Dot product of v3, v1 0.0
+```
+
+The 2 results of v2, v3 magnitude can be checked mathematically that they are = 1, due to the rounding of square root function of Julia, the result are only close to 1.
 
 
 5\.  For each vector in V in Q4 that is not in B, find its coordinates with respect to B. Show your work.
