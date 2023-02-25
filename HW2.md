@@ -121,9 +121,25 @@ The 2 results of v2, v3 magnitude can be checked mathematically that they are = 
 
 5\.  For each vector in V in Q4 that is not in B, find its coordinates with respect to B. Show your work.
 
+
 Answer: 
 
-6. Prove that for any set of vectors U with a finite basis B, each vector in U has unique coordinates with respect to B.
+  1. For vector (1, 1, 1)
+  c1 * v1 + c2 * v2 + c3 * v3 = [1 1 1]
+
+  In other words, we need to solve the system of equations:
+```math
+  c1 * 0 + c2 * (1/sqrt(10)) + c3 * (3/sqrt(10)) = 1
+  c1 * 1 + c2 * 0 + c3 * 0 = 1
+  c1 * 0 + c2 * (3/sqrt(10)) + c3 * (-1/sqrt(10)) = 1
+```
+  The second equation simplifies to c1 = 1. Substituting this into the other equations and solving for c2 and c3, we get:
+
+  c2 = (sqrt(10) - 3)/2
+  c3 = (3 + sqrt(10))/2
+
+
+6\. Prove that for any set of vectors U with a finite basis B, each vector in U has unique coordinates with respect to B.
 
 Answer:\
 Let $b_1,b_2,...,b_n$ be vectors in the finite basis B (n is number of vectors in B).\
