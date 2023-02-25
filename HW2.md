@@ -15,7 +15,11 @@ Therefore, $\theta=cos^{-1}({-3\over\sqrt{10}}) \approx 161.565 \ degrees$
 
 Answer: 
 
-Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1$ and $x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: $$4 + (-4) + -2x_3 = 0$$ $$\Leftrightarrow -2x_3 = 0$$ $$\Leftrightarrow x_3 =0$$ We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
+Let $x = (x_1, x_2, x_3)$ be the vector orthogonal to (4, 1, -2) then the dot product between them must be equal to zero. Therefore, $x_1*4 + x_2*1 + x_3*-2=0$. Since this single equation has three unknowns, we can set $x_1$ and $x_2$ as free values. For $x_1=1, x_2 =-4$, the equation becomes: 
+$$4 + (-4) + -2x_3 = 0$$ 
+$$\Leftrightarrow -2x_3 = 0$$ 
+$$\Leftrightarrow x_3 =0$$
+ We have $x=(1, -4, 0)$ as an orthogonal vector to $(4, 1, -2)$
 
 
 3. Suppose U is the set of vectors {(1, 1, 1), (1, 2, 3), (2, 2, 2), (3, 4, 5), (0, 1, 0), (1, 0, 1)}. What is the dimensionality of U? Show your work.
@@ -72,6 +76,7 @@ Answer:
   println(b_2*a_2')
 ```
 The result of part (i) is
+
 ```math
 \begin{bmatrix}
 -2 & 2\\
@@ -98,11 +103,17 @@ Answer:\
 
 Answer:
 
-Conclusion: $B^{T}B$ is an identity matrix of dimension n by n, which is a reflection of the fact that the columns of B are orthonormal. 
+Conclusion: $B^{T}B$ is an identity matrix of dimension $n$ by $n$, which is a reflection of the fact that the columns of B are orthonormal. 
 
-We have $$B^{T}B_{ij}=row_iB^{T}\cdot col_jB=col_iB\cdot col_jB$$ Since the columns of matrix B are orthonormal vector, it is given that: $$col_iB\cdot col_jB=0$$ for any i different to j as the vectors are orthogonal while $$col_iB\cdot col_iB=|col_iB|=1$$
+We have 
+$$B^{T}B_{ij}=row_iB^{T}\cdot col_jB=col_iB\cdot col_jB$$
 
-Therefore, we have $B^{T}B$ is a matrix that has 1 in diagonal line and 0 in other entries. In other word, $B^{T}B = I_{n\times n}$; it is an identity matrix with dimension of n by n
+ Since the columns of matrix B are orthonormal vector, it is given that: 
+ $$col_iB\cdot col_jB=0$$ 
+
+ for any i different to j as the vectors are orthogonal while $col_iB\cdot col_iB=|col_iB|=1$
+
+Therefore, we have $B^{T}B$ is a matrix that has 1 in diagonal line and 0 in other entries. In other word, $B^{T}B = I_{n\times n}$; it is an identity matrix with dimension of $n$ by $n$
 
 10. Suppose A=[2, 4, 3; 0, 1, 3] and B=[-2, -1, 3; 6, -7, 7]. Find the ranks of A, B and A+B. Show your work.
 
@@ -119,7 +130,15 @@ Answer:
     #(iii)
     println(rank(A+B))
 ```
-Therefore, ranks of A, B, and A+B are all equal to 2.
+  The the matrix A+B is:
+```math
+\begin{bmatrix}
+0 & 3 & 6\\
+6 & -6 & 10
+\end{bmatrix}
+```
+
+We see that the ranks of A, B, and A+B are all equal to 2 from the code output in HW2.ipynb. This is because the rank of a matrix is the number of independent columns or rows that it has. Since none of the rows from A, B, A+B can be divided to each othr to find a scalar value hence the matrices all have independent rows. Here our matrices are 2 by 3 so our rank can be 2 at most, therefore the answers are all equal to 2.
 
 11. Suppose b1=(0, -1, 2, 0, 2), b2=(1, -3, 1, -1, 2) and b3=(-3, 4, 1, 2, 1). Find the projection of x=(-1, -9, -1, 4, 1) into span(b1, b2, b3). Show your work.
 
