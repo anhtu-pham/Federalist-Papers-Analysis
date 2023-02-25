@@ -305,6 +305,16 @@ B^T=
 ```
 Therefore, projection of $x$ into $span(b1, b2, b3)$ is that $\pi(x)=B(B^TB)^{-1}B^Tx=(1, -5, -1, -2, 3)$
 
-12. Find the distance between the projection of x and span(b1, b2, b3) in Q11. Show your work.
+12. Find the distance between the of x and span(b1, b2, b3) in Q11. Show your work.
 
-Answer:
+Answer: The distance between x and span(b1, b2, b3) is equal to the distance between x and its projection on the span. I will use the Euclidean method to find the distance between:
+
+$$ x = (-1, -9, -1, 4, 1) $$ 
+and
+$$ proj(x)=(1, -5, -1, -2, 3) $$
+
+$d = \sqrt{(1 - (-1))^2 + ((-5) - (-9))^2 + ((-1) - (-1))^2 + ((-2) - 4)^2 + (3 - 1)^2} \
+= \sqrt{2^2 + 4^2 + 0^2 + (-6)^2 + 2^2} \
+= \sqrt{4 + 16 + 36 + 4} \
+= \sqrt{60} \ $
+$$= 2\sqrt{15}$$
