@@ -125,18 +125,53 @@ The 2 results of v2, v3 magnitude can be checked mathematically that they are = 
 Answer: 
 
   1. For vector (1, 1, 1)
-  c1 * v1 + c2 * v2 + c3 * v3 = [1 1 1]
 
-  In other words, we need to solve the system of equations:
+We need to solve the system of equations:
 ```math
-  c1 * 0 + c2 * (1/sqrt(10)) + c3 * (3/sqrt(10)) = 1
-  c1 * 1 + c2 * 0 + c3 * 0 = 1
-  c1 * 0 + c2 * (3/sqrt(10)) + c3 * (-1/sqrt(10)) = 1
+\begin{aligned}
+c_1 \cdot 0 + c_2 \cdot \frac{1}{\sqrt{10}} + c_3 \cdot \frac{3}{\sqrt{10}} &= 1 \
+c_1 \cdot 1 + c_2 \cdot 0 + c_3 \cdot 0 &= 1 \
+c_1 \cdot 0 + c_2 \cdot \frac{3}{\sqrt{10}} + c_3 \cdot \left(-\frac{1}{\sqrt{10}}\right) &= 1
+\end{aligned}
 ```
   The second equation simplifies to c1 = 1. Substituting this into the other equations and solving for c2 and c3, we get:
 
-  c2 = (sqrt(10) - 3)/2
-  c3 = (3 + sqrt(10))/2
+```math
+\begin{aligned}
+c_2 &= \frac{\sqrt{10} - 3}{2} \
+c_3 &= \frac{3 + \sqrt{10}}{2}
+\end{aligned}
+```
+
+These are the coordinates in the new basis.
+So (1, 1, 1) would be $(1, \frac{\sqrt{10} - 3}{2}, \frac{3 + \sqrt{10}}{2})$ in B.
+
+I will apply this same process to other vectors.
+
+2. For (1, 2 ,3)
+$$
+(2,\frac{2\sqrt{10} - 9}{2}, \frac{3\sqrt{10} + 9}{2})
+$$
+
+3. For (2, 2, 2)
+$$
+(0, \frac{4 - 3\sqrt{10}}{2}, 2)
+$$
+
+4. For (3, 4, 5)
+$$
+(4, \frac{2 - 3\sqrt{10}}{2},  \frac{5 + 3\sqrt{10}}{2})
+$$
+
+5. For (0, 1, 0)
+$$
+(1, 0, 0)
+$$
+
+6. For (1, 0, 1)
+$$
+(0, -\frac{3}{2\sqrt{10}},\frac{1}{2\sqrt{10}})
+$$
 
 
 6\. Prove that for any set of vectors U with a finite basis B, each vector in U has unique coordinates with respect to B.
