@@ -132,10 +132,7 @@ B^T=
 -3 & 4 & 1 & 2 & 1\\
 \end{bmatrix}
 ```
-Therefore, projection of $x$ into $span(b1, b2, b3)$ is that
-$
-\pi(x)=B(B^TB)^{-1}B^Tx=(1, -5, -1, -2, 3)
-$
+Therefore, projection of $x$ into $span(b1, b2, b3)$ is that $\pi(x)=B(B^TB)^{-1}B^Tx=(1, -5, -1, -2, 3)$
 
 12. Find the distance between the projection of x and span(b1, b2, b3) in Q11. Show your work.
 
