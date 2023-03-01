@@ -6,7 +6,7 @@ Not all data is stored as tables. In this assignment, we will read in and analyz
 Write a Julia program "federalist.jl." Your program should do all of the following (do not do any of it manually). Remember to properly split up your code into functions as needed.
 1. Read in the federalistpapers.txt file. (1 point)
 2. Break it up into the individual essays. Each essay starts with "Federalist No. n." Within each essay you can skip everything up to and including "To the People of the State of New York:" and the footnotes after "PUBLIUS." You can also skip everything up to the start of the first essay and everything after the end of the last essay. (3 points)
-3. Store the essays in a string array of arrays, where array\[n\]\[k\] is a string containing paragraph k of Federalist No. n. In the txt files, paragraphs are separated by blank lines. As you do this, remove all newlines from within a paragraph and concatenate the lines. So the lines in the text:  
+3. Store the essays in a string array of arrays, where array\[n\]\[k\] is a string contain`ing paragraph k of Federalist No. n. In the txt files, paragraphs are separated by blank lines. As you do this, remove all newlines from within a paragraph and concatenate the lines. So the lines in the text:  
 "AFTER an unequivocal experience of the inefficacy of the subsisting  
 federal government, you are called upon to deliberate on a new  
 Constitution for the United States of America. The subject speaks its"  
