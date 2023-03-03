@@ -2886,7 +2886,7 @@ For the Independent Journal. Saturday, December 1, 1787
 
 HAMILTON
 
-To the People of the State of New York.
+To the People of the State of New York:
 
 IN THE course of the preceding papers, I have endeavored, my fellow
 citizens, to place before you, in a clear and convincing light, the
@@ -7808,7 +7808,7 @@ to it by a deep conviction of the necessity of sacrificing private
 opinions and partial interests to the public good, and by a despair of
 seeing this necessity diminished by delays or by new experiments.
 
-
+PUBLIUS
 
 
 FEDERALIST No. 38

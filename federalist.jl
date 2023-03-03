@@ -1,8 +1,11 @@
 # Questions 1, 2, 4
-text = read("federalistpapers.txt", String)
-essays = split(text, r"FEDERALIST No.\ \d+")
-popfirst!(essays)
+
+text = read("federalistpapers.txt", String) # store the Federalist Papers in to a String
+essays = split(text, r"FEDERALIST No.\ \d+") # each essay will be put in to an index of "essays" array
+popfirst!(essays) # remove the introduction part before the first essay
 authors = Array{String}(undef, length(essays))
+
+# what about the last index where it contain the last essay
 for i in eachindex(essays)
     essayParts = split(essays[i], "PUBLIUS")
     essayParts = split(essayParts[1], "To the People of the State of New York")
