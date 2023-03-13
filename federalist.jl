@@ -144,8 +144,9 @@ end
 function average_word_length(essays)
     total_word_length = 0
     total_word_count = 0
-    for essay in essays
-        words = split(essay, r"(?<![.?!])\s*[.?!]\s*")
+    for essay in essays       
+        essay = replace(essay, r"[.?!]" => " ")
+        words = split(essay, r"\s+")
         for word in words
             total_word_length += length(word)
         end
@@ -180,6 +181,7 @@ end
 function unique_word_count(essays)
     word_dict = Dict()
     for essay in essays
+        essay = replace(essay, r"[.?!]" => " ")
         words = split(essay, r"\s+")
         for word in words
             if haskey(word_dict, word)
@@ -223,12 +225,11 @@ for author in authorSet
         unknown_words = word_dict   
         unknown_words_total = total_word_count(author_essays)
     end
-    #=
+
     println("Unique words and their frequency:")
     for (word, count) in word_dict
         println(word, ": ", count)
     end
-    =#
 end
 
 # Define the Score function (only for MADISON, HAMILTON, JAY, UNKNOWN)
