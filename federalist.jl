@@ -105,3 +105,4 @@ end
 for i in 1:5
     display("Number of words per essay by $(authorSet[i]): $(avgWordsPerEssay(essaysByAuthor[i]))")
 end
+
