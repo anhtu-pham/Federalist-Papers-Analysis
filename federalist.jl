@@ -106,3 +106,83 @@ for i in 1:5
     display("Number of words per essay by $(authorSet[i]): $(avgWordsPerEssay(essaysByAuthor[i]))")
 end
 
+
+# Question 16
+# Find the 10 words with the lowest score for each author
+madison_scores = Dict()
+for word in keys(madison_words)
+    madison_scores[word] = score("MADISON", word)
+end
+madison_least10 = sort(collect(madison_scores), by=x->x[2], rev=true)[(end - 9):end]
+
+hamilton_scores = Dict()
+for word in keys(hamilton_words)
+    hamilton_scores[word] = score("HAMILTON", word)
+end
+hamilton_least10 = sort(collect(hamilton_scores), by=x->x[2], rev=true)[(end - 9):end]
+
+jay_scores = Dict()
+for word in keys(jay_words)
+    jay_scores[word] = score("JAY", word)
+end
+jay_least10 = sort(collect(jay_scores), by=x->x[2], rev=true)[(end - 9):end]
+
+# Print the results
+print("Least 10 words for Madison:")
+for word in madison_least10
+    if(cmp(word, madison_least10[end]) == 0)
+        println(" $(word[1]).")
+    else
+        print(" $(word[1]),")
+    end
+end
+
+print("Least 10 words for Hamilton:")
+for word in hamilton_least10
+    if(cmp(word, hamilton_least10[end]) == 0)
+        println(" $(word[1]).")
+    else
+        print(" $(word[1]),")
+    end
+end
+
+print("Least 10 words for Jay:")
+for word in jay_least10
+    if(cmp(word, jay_least10[end]) == 0)
+        println(" $(word[1]).")
+    else
+        print(" $(word[1]),")
+    end
+end
+
+index = 1
+least10_words = Set{String}()
+for word in hamilton_least10
+    push!(least10_words, word[1])
+end
+for word in madison_least10
+    push!(least10_words, word[1])
+end
+for word in jay_least10
+    push!(least10_words, word[1])
+end
+
+function createVector(author, essays)
+    author_essays = find_essays_by_author(essays, author)
+    vector = Vector{Float64}(undef, 34)
+    vector[1] = average_word_count(author_essays)
+    vector[2] = average_word_length(author_essays)
+    vector[3] = average_sentence_count(author_essays)
+    vector[4] = average_sentence_per_paragraph(author_essays)
+    i = 5
+    for word in least10_words
+        vector[i] = score(author, word)
+        i += 1
+    end
+    return vector
+end
+
+hamilton_vector = createVector("HAMILTON", essays)
+madison_vector = createVector("MADISON", essays)
+jay_vector = createVector("JAY", essays)
+unknown_vector = createVector("UNKNOWN", essays)
