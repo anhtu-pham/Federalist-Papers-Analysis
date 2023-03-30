@@ -63,6 +63,26 @@ Answer:
 11. Suppose $S=\\{x : \Vert x\Vert \leq 1\\}$ where $x$ are vectors of size $n$. Show that $S$ is a convex set.
 
 Answer: 
+To show that $S$ is a convex set, we need to show that for any two points $x, y \in S$ and any scalar $\lambda \in [0,1]$, the point $(1-\lambda)x + \lambda y$ is also in $S$.
+
+Let $x$ and $y$ be two arbitrary vectors in $S$, which means that $|x| \leq 1$ and $|y| \leq 1$.
+
+Consider any scalar $\lambda \in [0,1]$. Then, we have:
+
+$$
+\begin{aligned}
+|(1-\lambda)x + \lambda y| &= |x + \lambda(y-x)| \\
+&\leq |x| + \lambda|y-x| \quad \text{(by triangle inequality)} \\
+&\leq 1 + \lambda|y-x| \quad \text{(since }|x|\leq 1\text{)} \\
+&\leq 1 + \lambda(|y|+|x|) \quad \text{(by triangle inequality)}\\
+&\leq 1 + \lambda + \lambda|y| \quad \text{(since }|x|\leq 1\text{ and }|y|\leq 1\text{)}\\
+&\leq 1 + \lambda \leq 1
+\end{aligned}
+$$
+
+Therefore, $(1-\lambda)x + \lambda y$ satisfies $|(1-\lambda)x + \lambda y| \leq 1$, which means that it belongs to $S$.
+
+Hence, we have shown that for any two points $x, y \in S$ and any scalar $\lambda \in [0,1]$, the point $(1-\lambda)x + \lambda y$ is also in $S$, which implies that $S$ is a convex set.
 
 12. Suppose $f$ and $g$ are two arbitrary convex functions. Prove or give a counterexample: (i) $f+g$ is convex (ii) $f-g$ is convex.
 
