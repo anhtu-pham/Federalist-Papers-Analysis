@@ -9,7 +9,8 @@ Answer:
 
 2. Using the definition of the derivative, show that $\frac{d}{dx}\frac{1}{x}=\frac{-1}{x^2}$. 
 
-Answer:
+Answer: $f(x)=\frac{1}{x}$ \
+$\frac{d}{dx}\frac{1}{x}=\frac{df(x)}{dx}=lim_{\Delta x \rightarrow 0}\frac{f(x+ \Delta x)-f(x)}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{1}{x+ \Delta x} - \frac{1}{x}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{- \Delta x}{x(x+ \Delta x)}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{-1}{x(x+ \Delta x)}=\frac{-1}{x(x+0)}=\frac{-1}{x^2}$
 
 
 3. Prove the quotient rule using the product rule and the chain rule of derivatives. You can use the result from Q2 above.
