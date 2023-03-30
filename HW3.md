@@ -12,14 +12,18 @@ Answer:
 Answer: $f(x)=\frac{1}{x}$ \
 $\frac{d}{dx}\frac{1}{x}=\frac{df(x)}{dx}=lim_{\Delta x \rightarrow 0}\frac{f(x+ \Delta x)-f(x)}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{1}{x+ \Delta x} - \frac{1}{x}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{- \Delta x}{x(x+ \Delta x)}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{-1}{x(x+ \Delta x)}=\frac{-1}{x(x+0)}=\frac{-1}{x^2}$
 
-
 3. Prove the quotient rule using the product rule and the chain rule of derivatives. You can use the result from Q2 above.
 
 Answer: 
 
 4. Find the derivative of $f(x)=a^x$ where $a$ is a constant. Show your work. (Hint: Write $f(x)$ as an exponential function and use the chain rule.)
 
-Answer: 
+Answer: $f(x)=a^x$, so $ln(f(x))=ln(a^x)=xln(a)$ and $f(x)=e^{xln(a)}=(e^x)^{ln(a)}$. \
+Let $g(x)=e^x$ and $h(u)=u^{ln(a)}$, then $f(x)=(g(x))^{ln(a)}=h(g(x))$. \
+We have $g'(x)=e^x$ and $h'(u)=ln(a)(u)^{ln(a)-1}$. \
+$(f(x))'=(h(g(x)))'=h'(g(x))(g'(x))=ln(a)(g(x))^{ln(a)-1}e^x=ln(a)(e^x)^{ln(a)-1}e^x=ln(a)(e^x)^{ln(a)-1+1}=ln(a)(e^x)^{ln(a)}=ln(a)e^{xln(a)}=ln(a)(e^{ln(a)})^x$. \
+Let $n=ln(a)$, then $e^n=a$ and $e^{ln(a)}=e^n=a$. \
+Then $(f(x))'=ln(a)(e^{ln(a)})^x=ln(a)a^x=a^x ln(a)$.
 
 5.  Find the Jacobian of $f(x,y)=\[x^y, y^x, e^{xy}\]$. Show your work. (Hint: The derivative of $x^n$, $n$ constant, is $nx^{n-1}$.)
 
