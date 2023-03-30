@@ -9,7 +9,8 @@ Answer:
 
 2. Using the definition of the derivative, show that $\frac{d}{dx}\frac{1}{x}=\frac{-1}{x^2}$. 
 
-Answer: $f(x)=\frac{1}{x}$ \
+Answer: \
+$f(x)=\frac{1}{x}$ \
 $\frac{d}{dx}\frac{1}{x}=\frac{df(x)}{dx}=lim_{\Delta x \rightarrow 0}\frac{f(x+ \Delta x)-f(x)}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{1}{x+ \Delta x} - \frac{1}{x}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{\frac{- \Delta x}{x(x+ \Delta x)}}{\Delta x}=lim_{\Delta x \rightarrow 0}\frac{-1}{x(x+ \Delta x)}=\frac{-1}{x(x+0)}=\frac{-1}{x^2}$
 
 3. Prove the quotient rule using the product rule and the chain rule of derivatives. You can use the result from Q2 above.
@@ -18,7 +19,8 @@ Answer:
 
 4. Find the derivative of $f(x)=a^x$ where $a$ is a constant. Show your work. (Hint: Write $f(x)$ as an exponential function and use the chain rule.)
 
-Answer: $f(x)=a^x$, so $ln(f(x))=ln(a^x)=xln(a)$ and $f(x)=e^{xln(a)}=(e^x)^{ln(a)}$. \
+Answer: \
+$f(x)=a^x$, so $ln(f(x))=ln(a^x)=xln(a)$ and $f(x)=e^{xln(a)}=(e^x)^{ln(a)}$. \
 Let $g(x)=e^x$ and $h(u)=u^{ln(a)}$, then $f(x)=(g(x))^{ln(a)}=h(g(x))$. \
 We have $g'(x)=e^x$ and $h'(u)=ln(a)(u)^{ln(a)-1}$. \
 $(f(x))'=(h(g(x)))'=h'(g(x))(g'(x))=ln(a)(g(x))^{ln(a)-1}e^x=ln(a)(e^x)^{ln(a)-1}e^x=ln(a)(e^x)^{ln(a)-1+1}=ln(a)(e^x)^{ln(a)}=ln(a)e^{xln(a)}=ln(a)(e^{ln(a)})^x$. \
@@ -39,7 +41,16 @@ Answer:
 
 8. Prof. Calculus is climbing Mt. Steepy McSteepface. At each point $(x,y)$ the mountain has height $h(x,y)= 100e^{-(x^2+y^2-6x-8y+25)}$. Help Prof. Calculus by finding the height of the summit. Show your work.
 
-Answer:
+Answer: \
+The height of the summit is the maximum value of the function $h(x,y)=100e^{-(x^2+y^2-6x-8y+25)}$. \
+Find the maximum value of function $h(x,y)=100e^{-(x^2+y^2-6x-8y+25)}$:
+- $\frac{\partial h}{\partial x}=0$ and $\frac{\partial h}{\partial y}=0$ \
+$\frac{\partial h}{\partial x}=\frac{\partial (100e^{-(x^2+y^2-6x-8y+25)})}{\partial x}=100e^{-(x^2+y^2-6x-8y+25)}(-2x+6)$ \
+$\frac{\partial h}{\partial y}=\frac{\partial (100e^{-(x^2+y^2-6x-8y+25)})}{\partial y}=100e^{-(x^2+y^2-6x-8y+25)}(-2y+8)$ \
+$0=\frac{\partial h}{\partial x}=100e^{-(x^2+y^2-6x-8y+25)}(-2x+6)$, so $-2x+6=0$ (because $e^{-(x^2+y^2-6x-8y+25)}$ is not equal to 0). $-2x+6=0$, so $x=3$. \
+$0=\frac{\partial h}{\partial y}=100e^{-(x^2+y^2-6x-8y+25)}(-2y+8)$, so $-2y+8=0$ (because $e^{-(x^2+y^2-6x-8y+25)}$ is not equal to 0). $-2y+8=0$, so $y=4$.
+
+The height of the summit is $f(3,4)=100e^{-(3^2+4^2-6\times 3-8 \times 4+25)}=100e^0=100$.
 
 9. When Prof. Calculus reaches the point on the mountain with $(x,y)$ coordinates of $(2, 2)$ in Q8 they feel an urgent need to return to the base camp which is at $(0,0)$. Find the best direction they should start to move in at this point to return quickly to camp. 
 
