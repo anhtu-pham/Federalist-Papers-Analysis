@@ -15,7 +15,9 @@ $\frac{d}{dx}\frac{1}{x}=\frac{df(x)}{dx}=lim_{\Delta x \rightarrow 0}\frac{f(x+
 
 3. Prove the quotient rule using the product rule and the chain rule of derivatives. You can use the result from Q2 above.
 
-Answer: 
+Answer: \
+$\frac{d}{dx}(\frac{f(x)}{g(x)})=\frac{d}{dx}(f(x){g(x)^{-1}})=f(x)\frac{dg(x)^{-1}}{dx}+\frac{df(x)}{dx}g(x)^{-1}=\frac{-f(x)g'(x)}{g(x)^2}+\frac{f'(x)}{g(x)}=\frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}$
+
 
 4. Find the derivative of $f(x)=a^x$ where $a$ is a constant. Show your work. (Hint: Write $f(x)$ as an exponential function and use the chain rule.)
 
