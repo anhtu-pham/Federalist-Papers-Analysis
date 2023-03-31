@@ -86,6 +86,7 @@ Answer:
 Answer: By definition a set C is convex if for any $x_1, x_2$ in C, $\lambda x_1 +(1−\lambda)x_2$ is also in C given that $0\leq\lambda\leq 1$. Examine $A\times(\lambda x_1 +(1−\lambda)x_2)$ :
 $$A\times(\lambda x_1 +(1−\lambda)x_2) = A\times\lambda x_1 + A\times (1-\lambda) x_2$$
 $$=\lambda A\times x_1 + (1-\lambda)A \times x_2 \geq \lambda b + (1-\lambda)b = b$$
+$$\Rightarrow A\times(\lambda x_1 +(1−\lambda)x_2) \geq b$$
 
 We directly proved that the condition for the set C to be convex is correct
 
