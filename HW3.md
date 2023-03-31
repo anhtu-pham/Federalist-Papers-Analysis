@@ -40,12 +40,12 @@ $$\frac{\partial{f_2}}{\partial y}=\frac{\partial{y^x}}{\partial y}=x^yln(x)$$
 $$\frac{\partial{f_1}}{\partial y}=\frac{\partial{x^y}}{\partial y}=xy^{x-1}$$
 
 $$\frac{\partial{f_3}}{\partial y}=\frac{\partial{e^{xy}}}{\partial y}=xe^{xy}$$
-\
-$\Longrightarrow\Delta_{x,y}=\begin{bmatrix} 
+
+$$\Rightarrow\Delta_{x,y}=\begin{bmatrix} 
    yx^{y-1} & x^yln(x) \\
    y^xln(y) & xy^{x-1} \\
    ye^{xy} & xe^{xy} \\
-   \end{bmatrix}$
+   \end{bmatrix}$$
 
 1. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
