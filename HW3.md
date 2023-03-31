@@ -79,11 +79,16 @@ The height of the summit is $h(3,4)=100e^{-(3^2+4^2-6\times 3-8 \times 4+25)}=10
 
 9. When Prof. Calculus reaches the point on the mountain with $(x,y)$ coordinates of $(2, 2)$ in Q8 they feel an urgent need to return to the base camp which is at $(0,0)$. Find the best direction they should start to move in at this point to return quickly to camp. 
 
-Answer:
+Answer: 
 
 10. Show that the set $C=\\{x : Ax \geq b\\}$ , with $A$ a matrix of size $(m,n)$, $x$ a vector of size $n$, $b$ a vector of size $m$, is a convex set. 
 
-Answer:
+Answer: By definition a set C is convex if for any $x_1, x_2$ in C, $\lambda x_1 +(1−\lambda)x_2$ is also in C given that $0\leq\lambda\leq 1$. Examine $A\times(\lambda x_1 +(1−\lambda)x_2)$ :
+$$A\times(\lambda x_1 +(1−\lambda)x_2) = A\times\lambda x_1 + A\times (1-\lambda) x_2$$
+$$=\lambda A\times x_1 + (1-\lambda)A \times x_2 \geq \lambda b + (1-\lambda)b = b$$
+
+We directly proved that the condition for the set C to be convex is correct
+
 
 11. Suppose $S=\\{x : \Vert x\Vert \leq 1\\}$ where $x$ are vectors of size $n$. Show that $S$ is a convex set.
 
