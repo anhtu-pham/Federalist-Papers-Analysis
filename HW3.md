@@ -95,4 +95,16 @@ Hence, we have shown that for any two points $x, y \in S$ and any scalar $\lambd
 
 12. Suppose $f$ and $g$ are two arbitrary convex functions. Prove or give a counterexample: (i) $f+g$ is convex (ii) $f-g$ is convex.
 
-Answer: 
+Answer: \
+(i) \
+$f$ and $g$ are convex functions. \
+Therefore, for every $x_1, x_2$ in $\mathbb{R}$ and every $\lambda$ in $[0,1]$, $f(\lambda x_1+(1-\lambda)x_2) \leq \lambda f(x_1)+(1-\lambda)f(x_2)$ and $g(\lambda x_1+(1-\lambda)x_2) \leq \lambda g(x_1)+(1-\lambda)g(x_2)$. \
+As a result, $(f+g)(\lambda x_1+(1-\lambda)x_2) = f(\lambda x_1+(1-\lambda)x_2) + g(\lambda x_1+(1-\lambda)x_2) \leq \lambda f(x_1)+(1-\lambda)f(x_2)+\lambda g(x_1)+(1-\lambda)g(x_2) = \lambda (f(x_1)+g(x_1)+(1-\lambda)(f(x_2)+g(x_2))=\lambda (f+g)(x_1)+(1-\lambda)(f+g)(x_2)$. \
+In short, for every $x_1, x_2$ in $\mathbb{R}$ and every $\lambda$ in $[0,1]$, $(f+g)(\lambda x_1+(1-\lambda)x_2) \leq \lambda (f+g)(x_1)+(1-\lambda)(f+g)(x_2)$. This shows that $f+g$ is convex. \
+(ii) \
+Provide counterexample: \
+Let $f$ be $f(x) = x^2$ and let $g$ be $g(x) = x^4$. \
+$\frac{d^2f}{dx^2}=\frac{d^2(x^2)}{dx^2}=\frac{d(\frac{d(x^2)}{dx})}{dx}=\frac{d(2x)}{dx}=2 > 0$ and $\frac{d^2g}{dx^2}=\frac{d^2(x^4)}{dx^2}=\frac{d(\frac{d(x^4)}{dx})}{dx}=\frac{d(4x^3)}{dx}=12x^2 \geq 0$ (because $x^2 \geq 0$). \
+Therefore, $f$ and $g$ are convex functions in this case. \
+$f-g=f(x)-g(x)=x^2-x^4$. \
+$\frac{d^2(f-g)}{dx^2}=\frac{d^2(x^2-x^4)}{dx^2}=\frac{d(\frac{d(x^2-x^4)}{dx})}{dx}=\frac{d(2x-4x^3)}{dx}=2-12x^2$, which is less than 0 if $x^2 > \frac{1}{6}$, so in this case, $f-g$ is not convex.
