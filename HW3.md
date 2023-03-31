@@ -29,7 +29,17 @@ Then $(f(x))'=ln(a)(e^{ln(a)})^x=ln(a)a^x=a^x ln(a)$.
 
 5.  Find the Jacobian of $f(x,y)=\[x^y, y^x, e^{xy}\]$. Show your work. (Hint: The derivative of $x^n$, $n$ constant, is $nx^{n-1}$.)
 
-Answer: 
+Answer: Let $[x^y, y^x, e^{xy}]=[f_1(x,y), f_2(x,y), f_3(x,y)]$, we have:
+
+$$\frac{\partial{f_1}}{\partial x}=\frac{\partial{x^y}}{\partial x}=yx^{y-1}$$
+$$\frac{\partial{f_2}}{\partial x}=\frac{\partial{y^x}}{\partial x}=y^xln(y)$$
+$$\frac{\partial{f_3}}{\partial x}=\frac{\partial{e^{xy}}}{\partial x}=ye^{xy}$$
+$$\frac{\partial{f_2}}{\partial y}=\frac{\partial{y^x}}{\partial y}=x^yln(x)$$
+$$\frac{\partial{f_1}}{\partial y}=\frac{\partial{x^y}}{\partial y}=xy^{x-1}$$
+
+$$\frac{\partial{f_3}}{\partial y}=\frac{\partial{e^{xy}}}{\partial y}=xe^{xy}$$
+\
+$\Longrightarrow\Delta_{x,y}=$
 
 6. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
