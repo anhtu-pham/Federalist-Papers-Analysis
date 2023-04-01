@@ -6,10 +6,8 @@ Note: Questions which ask you to "prove" something often require a general argum
 1. Find $f \circ g$ and $g \circ f$ for $f(x)=\sqrt{(x+2)}$ and $g(x)=\frac{1}{x}$.
 
 Answer:
-$$
-g \circ f = \frac{1}{\sqrt{x+2}} \\
-f \circ g = \sqrt{\frac{1}{x}+2}
-$$
+$$g \circ f = \frac{1}{\sqrt{x+2}} \\
+f \circ g = \sqrt{\frac{1}{x}+2}$$
 
 2. Using the definition of the derivative, show that $\frac{d}{dx}\frac{1}{x}=\frac{-1}{x^2}$. 
 
@@ -54,8 +52,7 @@ $$\Rightarrow\nabla_{x,y}=\begin{bmatrix}
 6. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
 Answer: 
-$$
-f \circ g =
+$$f \circ g =
 \begin{bmatrix}
 f_1(a,b) \\
 f_2(a,b)
@@ -64,16 +61,13 @@ f_2(a,b)
 \begin{bmatrix}
 a^{6}b^{4}+a^{2}-b^{3} \\
 a^{3}b^{2}+a^{4}b^{6}
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
-$$
-\nabla{_{a,b} (f \circ g)} =
+$$\nabla{_{a,b} (f \circ g)} =
 \begin{bmatrix}
 \dfrac{\partial f_1}{\partial a} & \dfrac{\partial f_1}{\partial b} \\
 \dfrac{\partial f_2}{\partial a} & \dfrac{\partial f_2}{\partial b}
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 7. Find the Hessian of $f \circ g$ from Q6. Show your work.
 
