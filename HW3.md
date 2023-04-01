@@ -121,9 +121,9 @@ Taking the partial derivatives, we get:
 - $\frac{\partial h}{\partial y} = -100(2y-8) e^{-(x^2+y^2-6x-8y+25)}$
 
 Evaluating these partial derivatives at the point (2,2), we get:
-- $$h_x(2,2) = -100(2*2-6) e^{-(2^2+2^2-6*2-8*2+25)} = 200e^5$$
+- $h_x(2,2) = -100(2*2-6) e^{-(2^2+2^2-6*2-8*2+25)} = 200e^5$
 
-- $$h_y(2,2) = -100(2*2-8) e^{-(2^2+2^2-6*2-8*2+25)}=400e^5$$
+- $h_y(2,2) = -100(2*2-8) e^{-(2^2+2^2-6*2-8*2+25)}=400e^5$
 
 So the gradient at (2,2) is given by:
 
