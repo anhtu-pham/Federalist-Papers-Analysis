@@ -107,7 +107,7 @@ The height of the summit is $h(3,4)=100e^{-(3^2+4^2-6\times 3-8 \times 4+25)}=10
 Answer: To find the best direction for Prof. Calculus to move in to return quickly to camp, we need to calculate the gradient of the height function $h(x,y)=100e^{-(x^2+y^2-6x-8y+25)}$ at the point (2,2). 
 
 The gradient of h(x,y) is given by the vector: 
-$\Delta_{x,y}=[\frac{\partial h}{\partial x}, \frac{\partial h}{\partial y}]$
+$\nabla_{x,y}=[\frac{\partial h}{\partial x}, \frac{\partial h}{\partial y}]$
 
 
 Taking the partial derivatives, we get: 
@@ -122,7 +122,7 @@ Evaluating these partial derivatives at the point (2,2), we get:
 
 So the gradient at (2,2) is given by:
 
-$\Delta_{x,y} = [200e^5, 400e^5]$
+$\nabla_{x,y} = [200e^5, 400e^5]$
 
 To return quickly to camp, Prof. Calculus should move such that function h will decrease fastest. The opposite direction of the gradient is the direction of steepest descent, and moving in this direction will take Prof. Calculus down the mountain to the base camp at (0,0) as quickly as possible. So the best direction for them to move in is:
 $$[-200e^5, -400e^5]$$
