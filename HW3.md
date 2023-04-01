@@ -70,6 +70,10 @@ a^{3}b^{2}+a^{4}b^{6}
 \begin{bmatrix}
 \dfrac{\partial f_1}{\partial a} & \dfrac{\partial f_1}{\partial b} \\
 \dfrac{\partial f_2}{\partial a} & \dfrac{\partial f_2}{\partial b}
+\end{bmatrix} =
+\begin{bmatrix}
+6a^{5}b4+2a & 4b^{3}a^{6}-3b^{2} \\
+3a^{2}b^{2} + 4a^{3}b^{6} & 2a^{3}b^{6}+6a^{4}b^{5}
 \end{bmatrix}
 ```
 
@@ -78,6 +82,11 @@ a^{3}b^{2}+a^{4}b^{6}
 Answer: 
 ```math
 \nabla_{a,b}^{2}(f \circ g) = 
+\begin{bmatrix}
+\frac{\partial^2 f_1}{\partial a^2};\frac{\partial^2 f_2}{\partial a^2} & \frac{\partial^2 f_1}{\partial a \partial b};\frac{\partial^2 f_2}{\partial a \partial b} \\
+\frac{\partial^2 f_1}{\partial b \partial a}; \frac{\partial^2 f_2}{\partial b \partial a} & \frac{\partial^2 f_1}{\partial b^2};\frac{\partial^2 f_2}{\partial b^2}
+\end{bmatrix}
+
 \begin{bmatrix}
 30a^{4}b^{4} +2 ; \; 6ab^{2}+12a^{2}b^{6}   &  24a^{5}b^{3}; \;6a^{2}b +  24a^{3}b^{5} \\
 24a^{5}b^{3}; \; 6a^{2}b+24a^{3}b^{5} &    12a^{6}b^{2}-6b;2a^3+30a^{4}b^{4}
