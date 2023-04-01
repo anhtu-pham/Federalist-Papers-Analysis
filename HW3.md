@@ -41,19 +41,46 @@ $$\frac{\partial{f_1}}{\partial y}=\frac{\partial{x^y}}{\partial y}=xy^{x-1}$$
 
 $$\frac{\partial{f_3}}{\partial y}=\frac{\partial{e^{xy}}}{\partial y}=xe^{xy}$$
 
-$$\Rightarrow\Delta_{x,y}=\begin{bmatrix} 
+$$\Rightarrow\nabla_{x,y}=\begin{bmatrix} 
    yx^{y-1} & x^yln(x) \\
    y^xln(y) & xy^{x-1} \\
    ye^{xy} & xe^{xy} \\
    \end{bmatrix}$$
 
-1. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
+6. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
 Answer: 
+$$
+f \circ g =
+\begin{bmatrix}
+f_1(a,b) \\
+f_2(a,b)
+\end{bmatrix}
+=
+\begin{bmatrix}
+a^{6}b^{4}+a^{2}-b^{3} \\
+a^{3}b^{2}+a^{4}b^{6}
+\end{bmatrix}
+$$
+
+$$
+\nabla{_{a,b} (f \circ g)} =
+\begin{bmatrix}
+\dfrac{\partial f_1}{\partial a} & \dfrac{\partial f_1}{\partial b} \\
+\dfrac{\partial f_2}{\partial a} & \dfrac{\partial f_2}{\partial b}
+\end{bmatrix}
+$$
 
 7. Find the Hessian of $f \circ g$ from Q6. Show your work.
 
 Answer: 
+$$
+\nabla{_{a,b}^{2}(f \circ g)} = 
+\begin{bmatrix}
+30a^{4}b^{4} +2 ; \; 6ab^{2}+12a^{2}b^{6}   &  24a^{5}b^{3}; \;6a^{2}b +  24a^{3}b^{5} \\
+24a^{5}b^{3}; \; 6a^{2}b+24a^{3}b^{5} &    12a^{6}b^{2}-6b;2a^3+30a^{4}b^{4}
+\end{bmatrix}
+$$
 
 8. Prof. Calculus is climbing Mt. Steepy McSteepface. At each point $(x,y)$ the mountain has height $h(x,y)= 100e^{-(x^2+y^2-6x-8y+25)}$. Help Prof. Calculus by finding the height of the summit. Show your work.
 
