@@ -118,9 +118,9 @@ Taking the partial derivatives, we get:
 - $\frac{\partial h}{\partial y} = -100(2y-8) e^{-(x^2+y^2-6x-8y+25)}$
 
 Evaluating these partial derivatives at the point (2,2), we get:
-- $$\frac{\partial h(2,2)}{\partial x} = -100(2*2-6) e^{-(2^2+2^2-6*2-8*2+25)} = 200e^5$$
+- $$h_x(2,2) = -100(2*2-6) e^{-(2^2+2^2-6*2-8*2+25)} = 200e^5$$
 
-- $$\frac{\partial h(2,2)}{\partial y} = -100(2*2-8) e^{-(2^2+2^2-6*2-8*2+25)}=400e^5$$
+- $$h_y(2,2) = -100(2*2-8) e^{-(2^2+2^2-6*2-8*2+25)}=400e^5$$
 
 So the gradient at (2,2) is given by:
 
@@ -129,7 +129,7 @@ $\Delta_{x,y} = [200e^5, 400e^5]$
 To return quickly to camp, Prof. Calculus should move such that function h will decrease fastest. The opposite direction of the gradient is the direction of steepest descent, and moving in this direction will take Prof. Calculus down the mountain to the base camp at (0,0) as quickly as possible. So the best direction for them to move in is:
 $$[-200e^5, -400e^5]$$
 
-1.  Show that the set $C=\\{x : Ax \geq b\\}$ , with $A$ a matrix of size $(m,n)$, $x$ a vector of size $n$, $b$ a vector of size $m$, is a convex set. 
+10.  Show that the set $C=\\{x : Ax \geq b\\}$ , with $A$ a matrix of size $(m,n)$, $x$ a vector of size $n$, $b$ a vector of size $m$, is a convex set. 
 
 Answer: By definition a set C is convex if for any $x_1, x_2$ in C, $\lambda x_1 +(1−\lambda)x_2$ is also in C given that $0\leq\lambda\leq 1$. Examine $A\times(\lambda x_1 +(1−\lambda)x_2)$ :
 $$A\times(\lambda x_1 +(1−\lambda)x_2) = A\times\lambda x_1 + A\times (1-\lambda) x_2$$
