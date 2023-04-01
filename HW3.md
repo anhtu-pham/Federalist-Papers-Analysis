@@ -6,8 +6,12 @@ Note: Questions which ask you to "prove" something often require a general argum
 1. Find $f \circ g$ and $g \circ f$ for $f(x)=\sqrt{(x+2)}$ and $g(x)=\frac{1}{x}$.
 
 Answer:
+<<<<<<< HEAD
 $$g \circ f = g(f(x))=\frac{1}{f(x)}=\frac{1}{\sqrt{x+2}} \\
 f \circ g = f(g(x)) =\sqrt{g(x) + 2} = \sqrt{\frac{1}{x}+2}$$
+=======
+$g \circ f = \frac{1}{\sqrt{x+2}} \\ f \circ g = \sqrt{\frac{1}{x}+2}$
+>>>>>>> 7090d3b86530ec43407414bf1d1c61bd94fd5692
 
 2. Using the definition of the derivative, show that $\frac{d}{dx}\frac{1}{x}=\frac{-1}{x^2}$. 
 
@@ -52,6 +56,7 @@ $$\Rightarrow\nabla_{x,y}=\begin{bmatrix}
 6. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
 Answer: 
+
 $$f \circ g =
 \begin{bmatrix}
 f_1(a,b) \\
@@ -63,7 +68,7 @@ a^{6}b^{4}+a^{2}-b^{3} \\
 a^{3}b^{2}+a^{4}b^{6}
 \end{bmatrix}$$
 
-$$\nabla{_{a,b} (f \circ g)} =
+$$\nabla_{a,b}(f \circ g) =
 \begin{bmatrix}
 \dfrac{\partial f_1}{\partial a} & \dfrac{\partial f_1}{\partial b} \\
 \dfrac{\partial f_2}{\partial a} & \dfrac{\partial f_2}{\partial b}
@@ -73,12 +78,13 @@ $$\nabla{_{a,b} (f \circ g)} =
 
 Answer: 
 $$
-\nabla{_{a,b}^{2}(f \circ g)} = 
+\nabla_{a,b}^{2}(f \circ g) = 
 \begin{bmatrix}
 30a^{4}b^{4} +2 ; \; 6ab^{2}+12a^{2}b^{6}   &  24a^{5}b^{3}; \;6a^{2}b +  24a^{3}b^{5} \\
 24a^{5}b^{3}; \; 6a^{2}b+24a^{3}b^{5} &    12a^{6}b^{2}-6b;2a^3+30a^{4}b^{4}
 \end{bmatrix}
 $$
+
 
 8. Prof. Calculus is climbing Mt. Steepy McSteepface. At each point $(x,y)$ the mountain has height $h(x,y)= 100e^{-(x^2+y^2-6x-8y+25)}$. Help Prof. Calculus by finding the height of the summit. Show your work.
 
