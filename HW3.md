@@ -56,7 +56,7 @@ $$\Rightarrow\nabla_{x,y}=\begin{bmatrix}
 6. Let $f(x, y, z)=(x^2+z, x+y^2)$. Let $g(a, b)=(a^3b^2, a^2b^3, a^2−b^3)$. Find the Jacobian of $f \circ g$. Show your work.
 
 Answer: 
-```
+```math
 f \circ g =
 \begin{bmatrix}
 f_1(a,b) \\
@@ -69,7 +69,7 @@ a^{3}b^{2}+a^{4}b^{6}
 \end{bmatrix}
 ```
 
-```
+```math
 \nabla_{a,b}(f \circ g) =
 \begin{bmatrix}
 \dfrac{\partial f_1}{\partial a} & \dfrac{\partial f_1}{\partial b} \\
@@ -80,7 +80,7 @@ a^{3}b^{2}+a^{4}b^{6}
 7. Find the Hessian of $f \circ g$ from Q6. Show your work.
 
 Answer: 
-```
+```math
 \nabla_{a,b}^{2}(f \circ g) = 
 \begin{bmatrix}
 30a^{4}b^{4} +2 ; \; 6ab^{2}+12a^{2}b^{6}   &  24a^{5}b^{3}; \;6a^{2}b +  24a^{3}b^{5} \\
