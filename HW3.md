@@ -41,7 +41,7 @@ $$\frac{\partial{f_1}}{\partial y}=\frac{\partial{x^y}}{\partial y}=xy^{x-1}$$
 
 $$\frac{\partial{f_3}}{\partial y}=\frac{\partial{e^{xy}}}{\partial y}=xe^{xy}$$
 
-$$\Rightarrow\Delta_{x,y}=\begin{bmatrix} 
+$$\Rightarrow\nabla_{x,y}=\begin{bmatrix} 
    yx^{y-1} & x^yln(x) \\
    y^xln(y) & xy^{x-1} \\
    ye^{xy} & xe^{xy} \\
