@@ -45,7 +45,7 @@ $$\frac{\partial{f_1}}{\partial y}=\frac{\partial{x^y}}{\partial y}=xy^{x-1}$$
 
 $$\frac{\partial{f_3}}{\partial y}=\frac{\partial{e^{xy}}}{\partial y}=xe^{xy}$$
 
-$$\Rightarrow\Delta_{x,y}=\begin{bmatrix} 
+$$\Rightarrow\nabla_{x,y}=\begin{bmatrix} 
    yx^{y-1} & x^yln(x) \\
    y^xln(y) & xy^{x-1} \\
    ye^{xy} & xe^{xy} \\
@@ -133,7 +133,7 @@ $\Delta_{x,y} = [200e^5, 400e^5]$
 To return quickly to camp, Prof. Calculus should move such that function h will decrease fastest. The opposite direction of the gradient is the direction of steepest descent, and moving in this direction will take Prof. Calculus down the mountain to the base camp at (0,0) as quickly as possible. So the best direction for them to move in is:
 $$[-200e^5, -400e^5]$$
 
-1.  Show that the set $C=\\{x : Ax \geq b\\}$ , with $A$ a matrix of size $(m,n)$, $x$ a vector of size $n$, $b$ a vector of size $m$, is a convex set. 
+10.  Show that the set $C=\\{x : Ax \geq b\\}$ , with $A$ a matrix of size $(m,n)$, $x$ a vector of size $n$, $b$ a vector of size $m$, is a convex set. 
 
 Answer: By definition a set C is convex if for any $x_1, x_2$ in C, $\lambda x_1 +(1−\lambda)x_2$ is also in C given that $0\leq\lambda\leq 1$. Examine $A\times(\lambda x_1 +(1−\lambda)x_2)$ :
 $$A\times(\lambda x_1 +(1−\lambda)x_2) = A\times\lambda x_1 + A\times (1-\lambda) x_2$$
