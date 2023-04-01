@@ -6,8 +6,8 @@ Note: Questions which ask you to "prove" something often require a general argum
 1. Find $f \circ g$ and $g \circ f$ for $f(x)=\sqrt{(x+2)}$ and $g(x)=\frac{1}{x}$.
 
 Answer:
-$$g \circ f = \frac{1}{\sqrt{x+2}} \\
-f \circ g = \sqrt{\frac{1}{x}+2}$$
+$$g \circ f = g(f(x))=\frac{1}{f(x)}=\frac{1}{\sqrt{x+2}} \\
+f \circ g = f(g(x)) =\sqrt{g(x) + 2} = \sqrt{\frac{1}{x}+2}$$
 
 2. Using the definition of the derivative, show that $\frac{d}{dx}\frac{1}{x}=\frac{-1}{x^2}$. 
 
