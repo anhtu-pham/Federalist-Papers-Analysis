@@ -1,6 +1,7 @@
 # Programming Assignment 3
 **Instructions:**  Only one notebook/program is needed from a group unless otherwise specified. Please make sure to write well-documented code using good variable names. Each person in each group must commit and push their own work. You will not get credit for work committed/pushed by someone else even if done by you. Each person is expected to do an approximately equal share of the work, as shown by the git logs. **If we do not see evidence of equal contribution from the logs for someone, their individual grade will be reduced substantially.** Please comment the last commit with "FINAL COMMIT" and **enter the final commit ID in canvas by the due date.**
 
+
 Some data are called *time series*. Here we have features and outcomes indexed by time. Download the "us_consumption.csv" file from Canvas. This dataset has a time series that describes the quarterly percentage changes of real personal consumption expenditure (RPCE), percentage changes of real personal disposable income (RPDI), percentage changes in industrial production (IP) and personal savings (PS), and  changes in the unemployment rate (UR) for the US from 1960 Q1 to 2016 Q3.
 
 Write a Julia program "linreg.jl" containing the following functions.
