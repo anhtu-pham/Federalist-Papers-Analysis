@@ -9,10 +9,10 @@ Answer:
 
 2. Explain why it would not violate the axioms of probability for someone to have degrees of beliefs $\Pr(A)=0.4$, $\Pr(B)=0.3$ and $\Pr(A \cup B)=0.5$ for two events $A$ and $B$. 
 
-Answer:
+Answer:\
+According to the axioms of probability, the probability of two events is equal to the sum of probability of the first event and the probability of the second event if these two events are mutually disjoint, and probability of any event is between 0 and 1. However, A and B are not necessarily the mutually disjoint events. In other words, there exists some atomic event that are in both A and B, and $\Pr(A \cap B)$ is higher than 0. $\Pr(A \cap B)=\Pr(A) + \Pr(B) - \Pr(A \cup B)$ while $\Pr(A \cap B)$ is higher than 0, so $\Pr(A) + \Pr(B)$ can be higher than $\Pr(A \cup B)$. Moreover, $\Pr(A)$, $\Pr(B)$, and $\Pr(A \cup B)$ are all between 0 and 1. Therefore, the given scenario would not violate the axioms of probability.
 
-
-3. If someone had the degrees of belief in question 2 above, what are the possible degrees of belief they might assign to $\Pr(A \cap B)$ without violating the axioms of probability?
+1. If someone had the degrees of belief in question 2 above, what are the possible degrees of belief they might assign to $\Pr(A \cap B)$ without violating the axioms of probability?
 
 Answer: 
 
