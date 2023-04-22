@@ -30,7 +30,12 @@ Answer:
 
 7. For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
 
-Answer: 
+Answer:\
+$\Pr(A \cup B)=\Pr(A) + \Pr(B) - \Pr(A \cap B)=0.5 + 0.3 - 0.1 = 0.7$.\
+$(A \cap B)$ is event containing all atomic events in both A and B, and $(A \cup B)$ is event containing all atomic events in A or B or both A and B. $(A \cap B) \cap (A \cup B)$ is event containing all atomic events in both $(A \cap B)$ and $(A \cup B)$.\
+Therefore, 
+$(A \cap B) \cap (A \cup B)=A \cap B.$\
+$\Pr(A \cap B|A \cup B)=\frac{\Pr((A \cap B) \cap (A \cup B))}{\Pr(A \cup B)}=\frac{\Pr(A \cap B)}{\Pr(A \cup B)}=\frac{0.1}{0.7}=\frac{1}{7}.$
 
 8. Suppose there are three events $A$, $B$, $C$ in a sample space so that $\Pr(A, B, C)>0$. Further we know that $A$ is independent of $B$. Show with an example for $A$, $B$, $C$ that it is not necessary that $A$ is independent of $B$, *given* $C$.
 
