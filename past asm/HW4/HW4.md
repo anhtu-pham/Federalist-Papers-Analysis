@@ -20,9 +20,17 @@ Answer:
 
 Answer: 
 
-5.  An exam consists of multiple choice questions, each with six choices. A student has a degree of belief 0.8 they will know the answer to a question. If they do not, they intend to pick one of the five choices at random, with each choice being equally likely to be picked. What is the probability they will correctly answer a question?
+5.  An exam consists of multiple choice questions, each with six choices. A student has a degree of belief 0.8 they will know the answer to a question. If they do not, they intend to pick one of the six choices at random, with each choice being equally likely to be picked. What is the probability they will correctly answer a question?
 
-Answer: 
+Answer:\
+Let $A$ be the event that the student correctly answers a question.\
+Let $B$ be the event that the student knows the answer to a question, so $\bar{B}$ is the event that the student does not know the answer to that question.\
+$B$ and $\bar{B}$ are mutually disjoint events and $B \cup \bar{B}=\Omega$, so $\Pr(B)+\Pr(\bar{B})=\Pr(B \cup \bar{B})=\Pr(\Omega)=1$ and $\Pr(\bar{B})=1-\Pr(B)$.\
+The student has degree of belief 0.8 that the student knows the answer, so $\Pr(B)=0.8$ and $\Pr(\bar{B})=1-\Pr(B)=1-0.8=0.2$.\
+If the student does not know the answer, one of the six choices are chosen at random, and each choice is equally likely ot be picked.\
+Therefore, the probability that the student chooses the correct answer given that the student does not know the answer is $\Pr(A|\bar{B})=\frac{1}{6}$.\
+The student always answers correctly if the student knows the answer, so the probability that the student chooses the correct answer given that the student knows the answer is $\Pr(A|B)=1$.\
+As a result, the probability that a question is answered correctly is $\Pr(A)=\Pr(A \cap B) + \Pr(A \cap \bar{B})=\Pr(A|B) \times \Pr(B)+\Pr(A|\bar{B}) \times \Pr(\bar{B})=1 \times 0.8 + \frac{1}{6} \times 0.2=\frac{5}{6}$.
 
 6. A square of side 1 meter is drawn on a board, and a circle of radius 0.5m is inscribed within it. A dart is thrown at the board so that the dart is equally likely to land at any point in the square. What is the probability the dart lands somewhere within the circle?
 
