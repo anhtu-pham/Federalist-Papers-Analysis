@@ -90,13 +90,11 @@ $\Pr(A|C) \times \Pr(B|C)=0.5 \times 0.5=0.25$ while $\Pr(A,B|C)=\frac{1}{6}$, s
 
 Answer:  
 I will calculate the probability of the car's color is actual red if I saw the car was red.
-```math
-P(\text{the car's color is actual red if I saw the car was red}) \\ = \frac{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})}
-{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})+P(\text{testimony of red being wrong based on reliability}).P(\text{any car being blue})} \\
-\\
-
-= \frac{0.75 \times 0.4}{0.75 \times 0.4  \; + 0.25 \times 0.6}
-= \frac{0.75 \times 0.4}{0.75 \times 0.4  \; + 0.25 \times 0.6} = 0.67
-```
+$
+P(\text{the car's color is actual red if I saw the car was red}) $\ 
+$= \frac{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})}
+{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})+P(\text{testimony of red being wrong based on reliability}).P(\text{any car being blue})}$\
+$= \frac{0.75 \times 0.4}{0.75 \times 0.4  \; + 0.25 \times 0.6} $\
+$= \frac{0.75 \times 0.4}{0.75 \times 0.4  \; + 0.25 \times 0.6} = 0.67 $\
 So the most likely color of the taxi is red, with a probability of 0.67. 
 
