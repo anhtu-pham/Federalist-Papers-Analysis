@@ -58,13 +58,13 @@ As a result, the probability that a question is answered correctly is $\Pr(A)=\P
 
 6. A square of side 1 meter is drawn on a board, and a circle of radius 0.5m is inscribed within it. A dart is thrown at the board so that the dart is equally likely to land at any point in the square. What is the probability the dart lands somewhere within the circle?
 
-Answer: 
-
+Answer:\
+For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
 The area of the square is equal to $(1m) \times (1m)=1m^2$.\
 The area of the circle is equal to $\pi \times (0.5m)^2=(0.25\pi)m^2$.\
 The dart is equally likely to land at any point in the square on the board, so the probability that the dart lands within the circle = $\frac{number \ of \ atomic \ events \ that \ the \ dart \ lands \ within \ the \ circle}{number \ of \ atomic \ events \ that \ the \ dart \ lands \ in \ the \ square}=\frac{the \ area \ of \ the \ circle}{the \ area \ of \ the \ square}=\frac{(0.25\pi)m^2}{1m^2}=0.25\pi \approx 0.785$.
 
-1. For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
+7. For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
 
 Answer:\
 $\Pr(A \cup B)=\Pr(A) + \Pr(B) - \Pr(A \cap B)=0.5 + 0.3 - 0.1 = 0.7$.\
@@ -75,8 +75,7 @@ $\Pr(A \cap B|A \cup B)=\frac{\Pr((A \cap B) \cap (A \cup B))}{\Pr(A \cup B)}=\f
 
 8. Suppose there are three events $A$, $B$, $C$ in a sample space so that $\Pr(A, B, C)>0$. Further we know that $A$ is independent of $B$. Show with an example for $A$, $B$, $C$ that it is not necessary that $A$ is independent of $B$, *given* $C$.
 
-Answer:
-
+Answer:\
 Let A be the event of getting odd number when tossing the first fair die with 6 sides. $\Pr(A)=\frac{3}{6}=0.5$\
 Let B be the event of getting odd number when tossing the second fair die with 6 sides. $\Pr(B)=\frac{3}{6}=0.5$\
 Let C be the event of getting a number that is smaller than 3 in that toss of the second fair die. $\Pr(C)=\frac{2}{6}=\frac{1}{3}$\
@@ -89,7 +88,7 @@ $\Pr(A|C) \times \Pr(B|C)=0.5 \times 0.5=0.25$ while $\Pr(A,B|C)=\frac{1}{6}$, s
 
 9. You  a night-time hit-and-run accident involving a taxi in Cleveland. All taxis in Cleveland are either red or blue. You state under oath that the taxi was red. Testing shows that, at night, discrimination between red and blue is 75% reliable. 60% of the taxis in Cleveland are blue. What is the most likely color of the taxi you saw?
 
-Answer:
+Answer:\
 $P(\text{red |  testimony}) = \frac{P(\text{testimony | red}) \cdot P(\text{red})}{P(\text{ testimony})}$
 
 $P(\text{testimony | red}) = 0.75$
