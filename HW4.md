@@ -66,7 +66,22 @@ $\Pr(A \cap B|A \cup B)=\frac{\Pr((A \cap B) \cap (A \cup B))}{\Pr(A \cup B)}=\f
 
 Answer:
 
-9. You witness a night-time hit-and-run accident involving a taxi in Cleveland. All taxis in Cleveland are either red or blue. You state under oath that the taxi was red. Testing shows that, at night, discrimination between red and blue is 75% reliable. 60% of the taxis in Cleveland are blue. What is the most likely color of the taxi you saw?
+9. You  a night-time hit-and-run accident involving a taxi in Cleveland. All taxis in Cleveland are either red or blue. You state under oath that the taxi was red. Testing shows that, at night, discrimination between red and blue is 75% reliable. 60% of the taxis in Cleveland are blue. What is the most likely color of the taxi you saw?
 
 Answer:
+$P(\text{red |  testimony}) = \frac{P(\text{testimony | red}) \cdot P(\text{red})}{P(\text{ testimony})}$
+
+$P(\text{testimony | red}) = 0.75$
+
+$P(\text{red}) = 1 - 0.6 = 0.4$
+
+$P(\text{testimony}) = P(\text{testimony | red}) \cdot P(\text{red}) + P(\text{testimony | blue}) \cdot P(\text{blue})$
+
+where $P(\text{testimony | blue}) = 0.25$
+
+$P(\text{testimony}) = 0.75 \cdot 0.4 + 0.25 \cdot 0.6 = 0.45$
+
+$P(\text{red | testimony}) = \frac{0.75 \cdot 0.4}{0.45} = 0.67$
+
+So the most likely color of the taxi is red, with a probability of 0.67.
 
