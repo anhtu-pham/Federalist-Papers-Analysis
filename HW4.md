@@ -91,7 +91,7 @@ $\Pr(A|C) \times \Pr(B|C)=0.5 \times 0.5=0.25$ while $\Pr(A,B|C)=\frac{1}{6}$, s
 Answer:  
 I will calculate the probability of the car's color is actual red if I saw the car was red.
 ```math
-P(the car's color is actual red if I saw the car was red) = \frac{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})}
+P(\text{the car's color is actual red if I saw the car was red}) \\ = \frac{P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})}
 {P(\text{testimony of red being correct based on reliability}).P(\text{any car being red})+P(\text{testimony of red being wrong based on reliability}).P(\text{any car being blue})} \\
 \\
 
