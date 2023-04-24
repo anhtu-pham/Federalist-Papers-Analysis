@@ -11,7 +11,7 @@ $Pr(A \cup B) = Pr(A \cup (B \setminus A))$
 $= Pr(A) + Pr(B \setminus A)$ (mutually exclusive, Axiom 3)
 
 $= Pr(A) + Pr(B \setminus A) + Pr(A \cap B) - Pr(A \cap B)$
-(Adding 0 = $Pr(A \cap B) - Pr(A \cap B)$)
+(Adding $0 = Pr(A \cap B) - Pr(A \cap B)$ )
 
 $= Pr(A) + Pr((B \setminus A) \cup (A \cap B)) - Pr(A \cap B)$
 (mutually exclusive, Axiom 3)
