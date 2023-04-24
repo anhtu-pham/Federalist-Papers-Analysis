@@ -6,6 +6,19 @@ Note: Questions which ask you to "prove" something often require a general argum
 1. Suppose $A \cup B$ denotes an event containing all atomic events in either $A$ or $B$ or both, and $A \cap B$ denotes an event containing only atomic events in both $A$ and $B$. Using the axioms of probability, show that $\Pr(A\cup B)=\Pr(A)+\Pr(B)-\Pr(A\cap B)$. Explain why this matches our intuitive analogy of probability-as-area.
 
 Answer:
+$Pr(A \cup B) = Pr(A \cup (B \setminus A))$
+
+$= Pr(A) + Pr(B \setminus A)$ (mutually exclusive, Axiom 3)
+
+$= Pr(A) + Pr(B \setminus A) + Pr(A \cap B) - Pr(A \cap B)$
+(Adding 0 = $Pr(A \cap B) - Pr(A \cap B)$)
+
+$= Pr(A) + Pr((B \setminus A) \cup (A \cap B)) - Pr(A \cap B)$
+(mutually exclusive, Axiom 3)
+
+$= Pr(A) + Pr(B) - Pr(A \cap B)$
+
+It matches the area intuition because when we add Pr(A) to Pr(B), then the overlapping area would be added twice. So we need to eliminate the overlapping area once, which is $Pr(A \cup B)$.
 
 2. Explain why it would not violate the axioms of probability for someone to have degrees of beliefs $\Pr(A)=0.4$, $\Pr(B)=0.3$ and $\Pr(A \cup B)=0.5$ for two events $A$ and $B$. 
 
@@ -14,7 +27,11 @@ Based on the axioms of probability, the probability of two events is equal to th
 
 3. If someone had the degrees of belief in question 2 above, what are the possible degrees of belief they might assign to $\Pr(A \cap B)$ without violating the axioms of probability?
 
-Answer: 
+Answer: Due to what we proved in Q1., we have:  
+$Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)$   
+Then,  
+$Pr(A \cap B) = Pr(A) + Pr(B) - Pr(A \cup B)$   
+$ = 0.4 + 0.3 - 0.5 = 0.2$
 
 4.	A disease D has two symptoms, pain and fever. Pain occurs in 95% of the people with D, but also in 10% of the people without D. Fever occurs in 90% of the people with D, but also in 5% of the people without D. D affects 1% of people. Which of pain or fever is a better indicator of D? 
 
