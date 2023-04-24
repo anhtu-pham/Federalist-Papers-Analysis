@@ -83,5 +83,5 @@ $P(\text{testimony}) = 0.75 \cdot 0.4 + 0.25 \cdot 0.6 = 0.45$
 
 $P(\text{red | testimony}) = \frac{0.75 \cdot 0.4}{0.45} = 0.67$
 
-So the most likely color of the taxi is red, with a probability of 0.67.
+So the most likely color of the taxi is red, with a probability of 0.67. 
 
