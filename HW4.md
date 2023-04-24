@@ -27,11 +27,10 @@ Based on the axioms of probability, the probability of two events is equal to th
 
 3. If someone had the degrees of belief in question 2 above, what are the possible degrees of belief they might assign to $\Pr(A \cap B)$ without violating the axioms of probability?
 
-Answer: Due to what we proved in Q1., we have:  
+Answer:\
+Due to what we proved in Q1., we have:  
 $Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)$   
-Then,  
-$Pr(A \cap B) = Pr(A) + Pr(B) - Pr(A \cup B)$   
-$ = 0.4 + 0.3 - 0.5 = 0.2$
+Then, $Pr(A \cap B) = Pr(A) + Pr(B) - Pr(A \cup B)= 0.4 + 0.3 - 0.5 = 0.2$
 
 4.	A disease D has two symptoms, pain and fever. Pain occurs in 95% of the people with D, but also in 10% of the people without D. Fever occurs in 90% of the people with D, but also in 5% of the people without D. D affects 1% of people. Which of pain or fever is a better indicator of D? 
 
