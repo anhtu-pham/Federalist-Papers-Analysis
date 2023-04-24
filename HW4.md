@@ -11,7 +11,7 @@ $Pr(A \cup B) = Pr(A \cup (B \setminus A))$
 $= Pr(A) + Pr(B \setminus A)$ (mutually exclusive, Axiom 3)
 
 $= Pr(A) + Pr(B \setminus A) + Pr(A \cap B) - Pr(A \cap B)$
-(Adding 0 = $Pr(A \cap B) - Pr(A \cap B)$)
+(Adding $0 = Pr(A \cap B) - Pr(A \cap B)$ )
 
 $= Pr(A) + Pr((B \setminus A) \cup (A \cap B)) - Pr(A \cap B)$
 (mutually exclusive, Axiom 3)
@@ -27,15 +27,22 @@ Based on the axioms of probability, the probability of two events is equal to th
 
 3. If someone had the degrees of belief in question 2 above, what are the possible degrees of belief they might assign to $\Pr(A \cap B)$ without violating the axioms of probability?
 
-Answer: Due to what we proved in Q1., we have:  
+Answer:\
+Due to what we proved in Q1., we have:  
 $Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)$   
-Then,  
-$Pr(A \cap B) = Pr(A) + Pr(B) - Pr(A \cup B)$   
-$ = 0.4 + 0.3 - 0.5 = 0.2$
+Then, $Pr(A \cap B) = Pr(A) + Pr(B) - Pr(A \cup B)= 0.4 + 0.3 - 0.5 = 0.2$
 
 4.	A disease D has two symptoms, pain and fever. Pain occurs in 95% of the people with D, but also in 10% of the people without D. Fever occurs in 90% of the people with D, but also in 5% of the people without D. D affects 1% of people. Which of pain or fever is a better indicator of D? 
 
 Answer: 
+
+Let A be the people having pain; let B be the people having fever.\
+Let $C$ be the people having disease D.\
+Probability that a person has pain is $\Pr(A)=\Pr(A \cap C) + \Pr(A \cap \bar{C})=\Pr(A|C) \times \Pr(C)+\Pr(A| \bar{C}) \times \Pr(\bar{ C})=(95\%) \times (1\%)+(10\%) \times (100\% - 1\%)=0.1085$\
+Probability that a person has fever is $\Pr(B)=\Pr(B \cap C) + \Pr(B \cap \bar{C})=\Pr(B | C) \times \Pr(C)+\Pr(B | \bar{C}) \times \Pr(\bar{C})=(90\%) \times (1\%)+(5\%) \times (100\% - 1\%)=0.0585$\
+Probability that a person has disease D given that this person has pain is $\Pr(C|A)=\frac{\Pr(A|C) \times \Pr(C)}{\Pr(A)}=\frac{(95\%) \times (1\%)}{0.1085}=\frac{19}{217} \approx 0.088$\
+Probability that a person has disease D given that this person has fever is $\Pr(C|B)=\frac{\Pr(B|C) \times \Pr(C)}{\Pr(B)}=\frac{(90\%) \times (1\%)}{0.0585}=\frac{2}{13} \approx 0.154$\
+Therefore, $\Pr(C|B)$ is higher than $\Pr(C|A)$, so fever is a better indicator of D.
 
 5.  An exam consists of multiple choice questions, each with six choices. A student has a degree of belief 0.8 they will know the answer to a question. If they do not, they intend to pick one of the six choices at random, with each choice being equally likely to be picked. What is the probability they will correctly answer a question?
 
@@ -51,7 +58,11 @@ As a result, the probability that a question is answered correctly is $\Pr(A)=\P
 
 6. A square of side 1 meter is drawn on a board, and a circle of radius 0.5m is inscribed within it. A dart is thrown at the board so that the dart is equally likely to land at any point in the square. What is the probability the dart lands somewhere within the circle?
 
-Answer: 
+Answer:\
+For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
+The area of the square is equal to $(1m) \times (1m)=1m^2$.\
+The area of the circle is equal to $\pi \times (0.5m)^2=(0.25\pi)m^2$.\
+The dart is equally likely to land at any point in the square on the board, so the probability that the dart lands within the circle = $\frac{number \ of \ atomic \ events \ that \ the \ dart \ lands \ within \ the \ circle}{number \ of \ atomic \ events \ that \ the \ dart \ lands \ in \ the \ square}=\frac{the \ area \ of \ the \ circle}{the \ area \ of \ the \ square}=\frac{(0.25\pi)m^2}{1m^2}=0.25\pi \approx 0.785$.
 
 7. For two events $A$ and $B$, $\Pr(A)=0.5$, $\Pr(B)=0.3$, $\Pr(A \cap B)=0.1$. Find $\Pr(A \cap B|A \cup B)$.
 
@@ -64,7 +75,16 @@ $\Pr(A \cap B|A \cup B)=\frac{\Pr((A \cap B) \cap (A \cup B))}{\Pr(A \cup B)}=\f
 
 8. Suppose there are three events $A$, $B$, $C$ in a sample space so that $\Pr(A, B, C)>0$. Further we know that $A$ is independent of $B$. Show with an example for $A$, $B$, $C$ that it is not necessary that $A$ is independent of $B$, *given* $C$.
 
-Answer:
+Answer:\
+Let A be the event of getting odd number when tossing the first fair die with 6 sides. $\Pr(A)=\frac{3}{6}=0.5$\
+Let B be the event of getting odd number when tossing the second fair die with 6 sides. $\Pr(B)=\frac{3}{6}=0.5$\
+Let C be the event of getting a number that is smaller than 3 in that toss of the second fair die. $\Pr(C)=\frac{2}{6}=\frac{1}{3}$\
+In this scenario, the first fair die and the second fair die are independent of each other; therefore, A is independent of B, and A is independent of C.\
+Because A is independent of B and A is independent of C, $\Pr(A,B,C)=\Pr(A) \times \Pr(B,C)=0.5 \times \frac{1}{6}=\frac{1}{12} > 0$.\
+$\Pr(A,B|C)=\frac{\Pr(A,B,C)}{\Pr(C)}=\frac{\frac{1}{12}}{0.5}=\frac{1}{6}$\
+$\Pr(A|C)=\Pr(A)=0.5$ (because A is independent of C).\
+$\Pr(B|C)=\frac{\Pr(B, C)}{\Pr(C)}=\frac{\frac{1}{6}}{\frac{1}{3}}=0.5$\
+$\Pr(A|C) \times \Pr(B|C)=0.5 \times 0.5=0.25$ while $\Pr(A,B|C)=\frac{1}{6}$, so $(\Pr(A|C) \times \Pr(B|C))$ and $\Pr(A,B|C)$ are different and A is not necessarily independent of B given C.
 
 9. You witness a night-time hit-and-run accident involving a taxi in Cleveland. All taxis in Cleveland are either red or blue. You state under oath that the taxi was red. Testing shows that, at night, discrimination between red and blue is 75% reliable. 60% of the taxis in Cleveland are blue. What is the most likely color of the taxi you saw?
 
